@@ -1,16 +1,35 @@
+"AUTHENTICATION_REQUESTED_TEXT_1" = "Finalise your registration for this study by clicking on the link and following the three steps.";
 
-
-"AUTHENTICATION_REQUESTED_TEXT_1" = "Finalise your registration for this study by clicking on the link. Taking this survey will take max. 5 minutes of your time.";
-
-
-"AUTHENTICATION_REQUESTED_TEXT_2" = "Thank you for your interest in participating in the Goodness Groceries app and study!";
+"AUTHENTICATION_REQUESTED_TEXT_2" = "Thank you for your interest in participating in the Goodness Groceries App and study!";
 
 
 "AUTHENTICATION_REQUESTED_TITLE" = "Before you start";
 
+
+"AUTHENTICATION_REQUESTED_VALID_TEXT_1" = "We are validating your participation. You will receive a notification when it will be approuved.";
+
+"AUTHENTICATION_REQUESTED_VALID_TEXT_3" = "Thank you for your interest in participating in the Goodness Groceries App and study!";
+
+
+"AUTHENTICATION_REQUESTED_VALID_TITLE" = "Your participation is under review";
+
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_1" = "We are analysing your buying habit in a first phase since";
+
+
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_2" = "It is a required period to see if your buying habits change thanks to this application.";
+
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_3" = "You will be able to use the application in";
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_4" = "days.";
+
+
+"AUTHENTICATION_REQUESTED_WAIT_TITLE" = "Observation phase";
+
+
 /*  */
 "BACK" = "Back";
-
+"MORE_PDF" = "More info";
+"READ_MORE" = "read more";
+"READ_LESS" = "read less";
 
 "CAMERA_NOT_ALLOWED" = "Goodness Groceries was not granted access to your camera to scan QR-codes. Please change that in settings. Thank you.";
 
@@ -205,6 +224,8 @@
 
 
 "IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IC_DESCRIPTION" = "Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.";
+
+"IND_FAIR_SUBIND_WAGELEVEL_CHOCOSPREADS_LC_DESCRIPTION" = "Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining .";
 
 
 "IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
@@ -473,18 +494,18 @@
 
 "NOTIFICATIONS" = "Notifications";
 
+"NOTIFICATION_ACCOUNT_AUTHENTICATED_BODY" = "Your account has been validated, you take part of the studie! Thank you.";
+"NOTIFICATION_ACCOUNT_AUTHENTICATED_TITLE" = "Congratulations";
 
-"NOTIFICATION_ACCOUNT_AUTHENTICATED_BODY" = "Your account has been authenticated, you can now access the app.";
-
-
-"NOTIFICATION_ACCOUNT_AUTHENTICATED_TITLE" = "Authentication completed";
+"NOTIFICATION_ACCOUNT_ARCHIVED_BODY" = "Your account has been archived, you can uninstall the app.";
+"NOTIFICATION_ACCOUNT_ARCHIVED_TITLE" = "Account archived";
 
 
 "NOTIFICATION_REVIEW_PRODUCTS_BODY" = "Take our short survey.";
-
-
 "NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Client feedback";
 
+"NOTIFICATION_ACCOUNT_PHASE2_TITLE" = "Next Step";
+"NOTIFICATION_ACCOUNT_PHASE2_BODY" = "You are invited to use the application to do grocery shopping.";
 
 "NOT_APPLICABLE" = "not applicable";
 
@@ -495,8 +516,9 @@
 "NO_PRODUCTS_FOUND" = "Sorry, no products found";
 
 
-"OPEN_FORM" = "Let's go!";
+"OPEN_FORM" = "Fill the form";
 
+"REOPEN_FORM" = "Go to the registration page";
 
 "OPEN_SETTINGS" = "Open settings";
 
@@ -538,15 +560,16 @@
 
 
 "PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Imported conventional";
-
+"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL_DESC" = "'Imported products' have entirely been produced or processed outside of Luxembourg. They travel by air, sea or land to Luxembourgish wholesale and retail markets. The distance travelled is referred to as 'food miles'. 'Conventional products' are produced, distributed and marketed according to any other criteria than the ones of organic methods, following general standards laid out by EU and the producing country’s legislation. They may have additional criteria defined in specific programmes and labels.";
 
 "PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Imported organic";
-
+"PRODUCT_CATEGORY_IMPORTED_ORGANIC_DESC" = "'Imported products' have entirely been produced or processed outside of Luxembourg. They travel by air, sea or land to Luxembourgish wholesale and retail markets. The distance travelled is referred to as 'food miles'. 'Organic products' are produced, distributed and marketed according to the criteria of public organic certification, and must comply at least with the legislation of the importing country defining the use of pesticides and fertilisers, animal welfare standards and considerations for biodiversity etc.  Some products may have voluntarily additional criteria defined by private organic certifications.";
 
 "PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Local conventional";
-
+"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL_DESC" = "'Local products' are produced or processed in Luxembourg. They can be made from nationally produced ingredients, imported ones or from a mixture of both. 'Conventional products' are produced, distributed and marketed according to any other criteria than the ones of organic methods, following general standards laid out by EU and Luxembourgish legislation. They may have additional criteria defined in specific programmes and labels.";
 
 "PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local organic";
+"PRODUCT_CATEGORY_LOCAL_ORGANIC_DESC" = "'Local products' are produced or processed in Luxembourg. They can be made from nationally produced ingredients, imported ones or from a mixture of both. 'Organic products' are produced, distributed and marketed according to the criteria of public organic certification, and must comply at least with EU organic legislation defining the use of pesticides and fertilisers, animal welfare standards and considerations for biodiversity etc.  Some products may have voluntarily additional criteria defined by private organic certifications.";
 
 
 "PRODUCT_COFFEE_IC_DESCRIPTION" = "Composition of Robusta and Arabica coffees with beans from Rainforest Alliance and UTZ Certified™ farms only.  Coffee does not contain any additives.";
@@ -558,7 +581,7 @@
 "PRODUCT_COFFEE_IO_DESCRIPTION" = "Bean coffee from Congo from organic farming and fair trade";
 
 
-"PRODUCT_COFFEE_IO_NAME" = "Café Kivu en grains";
+"PRODUCT_COFFEE_IO_NAME" = "Kivu Bean coffee";
 
 
 "PRODUCT_COFFEE_LC_DESCRIPTION" = "Origin 100% Brazil Isidro Pereira, ground, 250g";
@@ -570,7 +593,13 @@
 "PRODUCT_COFFEE_LO_DESCRIPTION" = "100% organic and Fairtrade certified Arabica coffee from Ethiopia, grown in the Sidamo region in heights between 1400 and 2200 m, and roasted at the Moulin J.P. Dieschbourg in Echternach, Luxembourg.";
 
 
-"PRODUCT_COFFEE_LO_NAME" = "Café Sidamo Bio";
+"PRODUCT_COFFEE_LO_NAME" = "Sidamo Bio coffee";
+
+
+"PRODUCT_CHOCOSPREADS_LC_NAME" = "Hazelnut Spread - The Original";
+"PRODUCT_CHOCOSPREADS_LC_DESCRIPTION" = "Piedmont hazelnut spread, milk chocolate. A clever mix entirely homemade! A well-kept secret recipe for exceptional pleasure.";
+"TYPE_CHOCOSPREADS" = "Choco spreads";
+
 
 /*  */
 "PROFILE" = "Profile";
@@ -627,10 +656,10 @@
 "WELCOME_PAGE_1_TITLE" = "Welcome to Goodness Groceries!";
 
 
-"WELCOME_PAGE_3_TEXT" = "Please tell us about your priorities, in order to personalise your experience.";
+"WELCOME_PAGE_3_TEXT" = "Continue to personalize your App experience";
 
 
-"WELCOME_PAGE_3_TITLE" = "What is most important to you when you shop?";
+"WELCOME_PAGE_3_TITLE" = "The four sustainability themes";
 
 
 "WELCOME_PAGE_4_TITLE" = "What is closest to your heart when grocery shopping? (up to 4)";
@@ -647,6 +676,7 @@
 
 "WELCOME_PAGE_7_TEXT" = "Each product will be presented with its relevant sustainability indicators. Read more about each indicator by clicking on them, and make your purchases based on the information available.";
 
+"WELCOME_PAGE_7_TEXT2" = "I have answer the 3 questions.";
 
 "WELCOME_PAGE_7_TITLE" = "See indicators that matter to you";
 
@@ -670,3 +700,4 @@
 
 
 "fr" = "Français";
+

@@ -35,7 +35,6 @@ struct Product: Hashable, Decodable {
     
     func getSimilarProducts() -> [Product]  {
         let productsVM = ProductsViewModel()
-        
         return productsVM.products.filter({ $0.type == self.type && $0 != self })
     }
     

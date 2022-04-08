@@ -1,5 +1,6 @@
 import SwiftUI
 
+
 struct PopupView<Content>: View where Content: View {
     
     let content: () -> Content
@@ -47,6 +48,7 @@ struct IndicatorPopup: View {
     
     var body: some View {
         PopupView {
+            
             VStack (alignment: .leading) {
                 HStack {
                     Image(indicator.icon_name)
@@ -66,7 +68,7 @@ struct ProductIndicatorPopup: View {
     let productIndicator: ProductIndicator
     @EnvironmentObject var PopupManager: PopupManager
     @EnvironmentObject var UserSettings: UserSettings
-    
+    @Environment(\.openURL) var openURL
     var body: some View {
         PopupView {
             if let indicator = productIndicator.getIndicator() {
@@ -75,16 +77,41 @@ struct ProductIndicatorPopup: View {
                         Image(indicator.icon_name)
                         Text(NSLocalizedString(indicator.name, lang: UserSettings.language)).font(.system(size: 20)).fixedSize(horizontal: false, vertical: true)
                     }
+                    ScrollView(.vertical, showsIndicators: false) {
                     VStack (alignment: .leading, spacing: 15) {
                         ForEach(productIndicator.sub_indicators, id: \.self) { productSubIndicator in
                             VStack (alignment: .leading, spacing: 0) {
                                 Text(NSLocalizedString(productSubIndicator.name, lang: UserSettings.language)).font(.headline)
-                                Text(NSLocalizedString(productSubIndicator.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                                //Text(NSLocalizedString(productSubIndicator.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                                ExpandableText(text: NSLocalizedString(productSubIndicator.description, lang: UserSettings.language))
+                                            .lineLimit(4)//optional
+                                            .animation(.easeOut)//optional
+                                            .padding(.horizontal, 24)//optional
+                                if !((productSubIndicator.file ?? "").isEmpty) {
+                                    HStack {
+                                        Spacer()
+                                        Button(action: {
+                                        DispatchQueue.main.async {
+                                            openURL(URL(string: productSubIndicator.file ?? "")!)
+                                        }
+                                        }, label: {
+                                            Text(NSLocalizedString("MORE_PDF", lang: UserSettings.language))
+                                        }).padding(20)
+                                    }
+                                }
                             }
                             if productSubIndicator.self != productIndicator.sub_indicators.last {
                                 Divider()
                             }
                         }
+                    }
+                    .frame(
+                        minWidth: 0,
+                        maxWidth: .infinity,
+                        minHeight: 0,
+                        maxHeight: .infinity,
+                        alignment: .topLeading
+                      )
                     }
                     BlueButton(label: "Ok", action: {
                         PopupManager.showPopup = false
@@ -116,6 +143,39 @@ struct CategoryPopup: View {
         }
     }
 }
+
+
+struct ProductCategoryPopup: View {
+    
+    let Productcategory: ProductCategory
+    let screenHeight = UIScreen.main.bounds.size.height
+    @EnvironmentObject var PopupManager: PopupManager
+    @EnvironmentObject var UserSettings: UserSettings
+    
+    var body: some View {
+        PopupView {
+            VStack (alignment: .leading) {
+                HStack {
+                    Image("GG_\(Productcategory.rawValue)")
+                    Text(NSLocalizedString(Productcategory.name, lang: UserSettings.language)).font(.headline)
+                }
+                if (NSLocalizedString(Productcategory.description, lang: UserSettings.language).count > 700 && screenHeight < 700)
+                {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        Text(NSLocalizedString(Productcategory.description, lang: UserSettings.language))
+                    }
+                }
+                else {
+                    Text(NSLocalizedString(Productcategory.description, lang: UserSettings.language))
+                }
+                BlueButton(label: "Ok", action: {
+                    PopupManager.showPopup = false
+                }).padding(.top, 8)
+            }
+        }
+    }
+}
+
 
 struct NetworkErrorPopup: View {
     

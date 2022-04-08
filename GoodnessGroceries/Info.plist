@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>Luxembourg</string>
 	<key>CFBundleDisplayName</key>
-	<string>Goodness Groceries</string>
+	<string>Goodness Groceries</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -22,6 +22,8 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>This permission is not needed by the app, but it is required by an underlying API. If you see this dialog, contact us.</string>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Not in use</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>

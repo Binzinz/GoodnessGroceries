@@ -27,6 +27,7 @@ struct Profile: View {
                                 withAnimation(.default) {
                                     UserSettings.showSurvey = true
                                 }
+                                
                             }
                         }, label: {
                             HStack {

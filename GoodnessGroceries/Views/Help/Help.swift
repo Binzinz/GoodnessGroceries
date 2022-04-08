@@ -32,14 +32,19 @@ struct Help: View {
                             Text(NSLocalizedString("HELP_PAGE_BUTTON_1", lang: UserSettings.language))
                         }
                         Button(action: {
-                            openURL(URL(string: "http://food.daloos.uni.lu/projects/research-projects/sustainable-shopping-app/help-page/")!)
+                            openURL(URL(string: "https://food.uni.lu/goodness-groceries/")!)
                         }, label: {
                             Text(NSLocalizedString("HELP_PAGE_BUTTON_2", lang: UserSettings.language)).foregroundColor(.black)
                         })
                         Button(action: {
-                            openURL(URL(string: "http://food.daloos.uni.lu/projects/research-projects/sustainable-shopping-app/contact-us/")!)
+                            openURL(URL(string: "https://food.uni.lu/goodness-groceries/help/")!)
                         }, label: {
                             Text(NSLocalizedString("HELP_PAGE_BUTTON_3", lang: UserSettings.language)).foregroundColor(.black)
+                        })
+                        Button(action: {
+                            openURL(URL(string: "https://food.uni.lu/goodness-groceries/contact-us/")!)
+                        }, label: {
+                            Text(NSLocalizedString("HELP_PAGE_BUTTON_4", lang: UserSettings.language)).foregroundColor(.black)
                         })
                     }
                 }

@@ -1,12 +1,110 @@
-[
+[ {
+    "code": "5407005661055",
+    "name": "PRODUCT_CHOCOSPREADS_LC_NAME",
+    "description": "PRODUCT_CHOCOSPREADS_LC_DESCRIPTION",
+    "type": "TYPE_CHOCOSPREADS",
+    "category": "local_conventional",
+    "provider": "Genaveh",
+    "image_url": "5407005661055",
+    "indicators": [
+      {
+        "id": "ind_animal",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_biodiv",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_flora",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_soil",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_sovereignty",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_food",
+        "applicable": false,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_localeco",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_decent",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_equity",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_labour",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_fair",
+        "applicable": true,
+        "sub_indicators": [
+              {
+                "name": "IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_NAME",
+                "description": "NO_EVIDENCE"
+              },
+              {
+                "name": "IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_NAME",
+                "description": "NO_EVIDENCE"
+              },
+              {
+                "name": "IND_FAIR_SUBIND_WAGELEVEL_NAME",
+                "description": "IND_FAIR_SUBIND_WAGELEVEL_CHOCOSPREADS_LC_DESCRIPTION",
+                "file":"https://food.daloos.uni.lu/wp-content/uploads/sites/21/2022/02/GG_Product-sheet_Flour_OrganicLocal.pdf"
+              },
+              {
+                "name": "IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_NAME",
+                "description": "NO_EVIDENCE"
+              }
+        ]
+      },
+      {
+        "id": "ind_transparency",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_participation",
+        "applicable": true,
+        "sub_indicators": []
+      },
+      {
+        "id": "ind_sustainablemanagement",
+        "applicable": true,
+        "sub_indicators": []
+      }
+    ]
+    },
   {
-    "code": "1",
+    "code": "5410138001216",
     "name": "PRODUCT_COFFEE_LO_NAME",
     "description": "PRODUCT_COFFEE_LO_DESCRIPTION",
     "type": "TYPE_COFFEE",
     "category": "local_organic",
     "provider": "Moulin J.P. Dieschbourg",
-    "image_url": "1",
+    "image_url": "5410138001216",
     "indicators": [
       {
         "id": "ind_animal",
@@ -261,15 +359,15 @@
       {
         "id": "ind_flora",
         "applicable": true,
-        "sub_indicators": [
-          {
-            "name": "IND_FLORA_SUBIND_PESTICIDES_NAME",
-            "description": "IND_FLORA_SUBIND_PESTICIDES_COFFEE_IO_DESCRIPTION"
-          },
-          {
-            "name": "IND_FLORA_SUBIND_ANIMALDRUGUSE_NAME",
-            "description": "NOT_APPLICABLE"
-          }
+            "sub_indicators": [
+              {
+                "name": "IND_FLORA_SUBIND_PESTICIDES_NAME",
+                "description": "IND_FLORA_SUBIND_PESTICIDES_COFFEE_IO_DESCRIPTION"
+              },
+              {
+                "name": "IND_FLORA_SUBIND_ANIMALDRUGUSE_NAME",
+                "description": "NOT_APPLICABLE"
+              }
         ]
       },
       {

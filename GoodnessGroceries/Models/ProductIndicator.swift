@@ -19,4 +19,5 @@ struct ProductIndicator: Hashable, Decodable {
 struct ProductSubIndicator: Hashable, Decodable {
     var name: String
     var description: String
+    var file: String?
 }

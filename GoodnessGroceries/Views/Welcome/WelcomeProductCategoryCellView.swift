@@ -2,7 +2,7 @@ import SwiftUI
 
 struct WelcomeProductCategoryCellView: View {
     
-    let category: ProductCategory
+    let Productcategory: ProductCategory
     @State var color: Color = Color("GG_D_Blue")
     @EnvironmentObject var UserSettings: UserSettings
     @EnvironmentObject var PopupManager: PopupManager
@@ -13,20 +13,24 @@ struct WelcomeProductCategoryCellView: View {
             VStack (alignment: .leading) {
                 HStack {
                     HStack {
-                        Image("GG_\(category.rawValue)").frame(width: 60)
-                        Text(NSLocalizedString(category.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                        Image("GG_\(Productcategory.rawValue)").frame(width: 60)
+                        Text(NSLocalizedString(Productcategory.name, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                         Spacer(minLength: 0)
                     }
                     .contentShape(Rectangle())
+                    .onTapGesture {
+                        print(Productcategory)
+                        PopupManager.currentPopup = .productCategory(productCategory: Productcategory)
+                    }
                     Button(action: {
                         withAnimation(.linear(duration: 0.15)) {
                             color = (color == Color.white) ? Color("GG_D_Blue") : Color.white
                         }
                         
-                        if WelcomeViewModel.selectedProductCategories.contains(category.rawValue) {
-                            WelcomeViewModel.selectedProductCategories.removeAll { $0 == category.rawValue }
+                        if WelcomeViewModel.selectedProductCategories.contains(Productcategory.rawValue) {
+                            WelcomeViewModel.selectedProductCategories.removeAll { $0 == Productcategory.rawValue }
                         } else {
-                            WelcomeViewModel.selectedProductCategories.append(category.rawValue)
+                            WelcomeViewModel.selectedProductCategories.append(Productcategory.rawValue)
                             impactFeedback(.medium)
                         }
                     }, label: {

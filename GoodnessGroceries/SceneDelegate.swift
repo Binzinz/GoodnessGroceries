@@ -43,7 +43,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     func sceneDidDisconnect(_ scene: UIScene) { }
 
-    func sceneDidBecomeActive(_ scene: UIScene) { }
+    func sceneDidBecomeActive(_ scene: UIScene) {
+        if !UserSettings.shared.clientID.isEmpty {
+            UserSettings.shared.signIn()
+        }
+    }
 
     func sceneWillResignActive(_ scene: UIScene) { }
 
@@ -51,7 +55,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if UserSettings.shared.statusRequested == true {
             UserSettings.shared.signIn()
         }
-        
+        //UserSettings.shared.signIn()
         if !UserSettings.shared.showWelcome {
             DispatchQueue.main.async {
                 NetworkManager.shared.fetchProductsBought(for: UserSettings.shared.clientID) { result in

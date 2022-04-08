@@ -6,8 +6,11 @@ struct SurveyView: View {
     @StateObject var surveyVM = SurveyViewModel()
     @EnvironmentObject var UserSettings: UserSettings
     @EnvironmentObject var PopupManager: PopupManager
-    
     var body: some View {
+        //Text("Hello World!")
+        //    .onAppear(perform: {
+         //                  print("myVar: \(UserSettings.productsToReview)")
+         //              })
         if UserSettings.productsToReview.count > 0 {
             if let product = productsVM.products.filter({ $0.code == UserSettings.productsToReview.first }).first {
                 ScrollView (.vertical, showsIndicators: true) {

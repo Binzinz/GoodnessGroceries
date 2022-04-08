@@ -4,13 +4,12 @@ struct ContentView: View {
     
     @EnvironmentObject var UserSettings: UserSettings
     @EnvironmentObject var PopupManager: PopupManager
-    
     var body: some View {
         ZStack {
             if UserSettings.showWelcome {
-                if !UserSettings.statusRequested {
+                if UserSettings.step < 9 {
                     if UserSettings.step >= 0 && UserSettings.step <= 5 {
-                         VStack {
+                        VStack {
                             ZStack(alignment: .bottom) {
                                 Welcome()
                             }
@@ -30,9 +29,15 @@ struct ContentView: View {
                          Welcome_page7().transition(.viewTransition)
                     } else if UserSettings.step == 7 {
                          Welcome_page8().transition(.viewTransition)
-                    }
+                    } else if UserSettings.step == 8 {
+                        Welcome_page9().transition(.viewTransition)
+                   }
                 } else {
-                    StatusRequestedView()
+                    if UserSettings.statusRequested {
+                        StatusRequestedView()
+                    } else {
+                        WaitPhase2View()
+                    }
                 }
             } else {
                 GeometryReader { geometry in
@@ -70,7 +75,6 @@ struct ContentView: View {
                     }
                 }
             }
-            
             if UserSettings.showSurvey {
                 NavigationView {
                     SurveyView()
@@ -122,6 +126,8 @@ struct ContentView: View {
                     ProductIndicatorPopup(productIndicator: productIndicator)
                 case .category(let category):
                     CategoryPopup(category: category)
+                case .productCategory(let productCategory):
+                ProductCategoryPopup(Productcategory: productCategory)
                 case .error(let error):
                     switch error {
                         case .network:

@@ -1,16 +1,36 @@
+"AUTHENTICATION_REQUESTED_TEXT_1" = "Merci de votre intérêt pour participer à l'application et l'étude Goodness Groceries !";
 
 
-"AUTHENTICATION_REQUESTED_TEXT_1" = "Finalisez votre inscription en cliquant sur le lien. Ce questionnaire vous prendra cinq minutes.";
+"AUTHENTICATION_REQUESTED_TEXT_2" = "Finalisez votre inscription en cliquant sur le lien et en suivant les trois étapes.";
 
 
-"AUTHENTICATION_REQUESTED_TEXT_2" = "Merci pour votre intérêt à participer à l’appli et l’étude Goodness Groceries!";
+"AUTHENTICATION_REQUESTED_TITLE" = "On y est presque !";
 
 
-"AUTHENTICATION_REQUESTED_TITLE" = "Avant de commencer";
+"AUTHENTICATION_REQUESTED_VALID_TEXT_1" = "Vous recevrez une notification lorsque nous aurons validé votre formulaire de consentement.";
+
+"AUTHENTICATION_REQUESTED_VALID_TEXT_3" = "Si vous avez manqué une étape d’inscription, veuillez cliquer sur le bouton ci-dessous.";
+
+
+"AUTHENTICATION_REQUESTED_VALID_TITLE" = "Nous validons votre inscription";
+
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_1" = "Vous participez maintenant à l'étude depuis le";
+
+
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_2" = "Faites vos courses comme d’habitude en utilisant votre carte client Pall Center pendant les prochaines semaines.";
+
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_3" = "Vous pourrez explorer tous les thèmes de durabilité de l'application dans";
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_4" = "jours";
+
+
+"AUTHENTICATION_REQUESTED_WAIT_TITLE" = "Votre inscription a été validée";
+
 
 
 "BACK" = "Retour";
-
+"MORE_PDF" = "Plus d'info";
+"READ_MORE" = "voir plus";
+"READ_LESS" = "voir moins";
 
 "CAMERA_NOT_ALLOWED" = "Goodness Groceries n’a pas pu accéder à votre caméra pour scanner les codes QR. Veuillez activer les autorisations dans les paramètres. Merci.";
 
@@ -27,7 +47,7 @@
 "COMPARE" = "Comparer";
 
 
-"CONTINUE" = "Suivant";
+"CONTINUE" = "Continuer";
 
 
 "DONE" = "Ok";
@@ -38,11 +58,12 @@
 
 "HELP_PAGE_BUTTON_1" = "Définitions des indicateurs";
 
+"HELP_PAGE_BUTTON_2" = "Goodness Groceries Homepage";
 
-"HELP_PAGE_BUTTON_2" = "Aide";
+"HELP_PAGE_BUTTON_3" = "Aide";
 
 
-"HELP_PAGE_BUTTON_3" = "Nous contacter";
+"HELP_PAGE_BUTTON_4" = "Nous contacter";
 
 
 "HOME" = "Accueil";
@@ -211,6 +232,9 @@
 
 /*  */
 "IND_FAIR_SUBIND_WAGELEVEL_NAME" = "Niveau de salaire";
+
+
+"IND_FAIR_SUBIND_WAGELEVEL_CHOCOSPREADS_LC_DESCRIPTION" = "Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.";
 
 /*  */
 "IND_FLORA_DESCRIPTION" = "Les ravageurs et les maladies des plantes sont gérés et contrôlés par des méthodes plus naturelles (amélioration du biote bénéfique, maximisation des insectes bénéfiques, recyclage des nutriments ou minimisation des perturbations du sol). Le bétail est protégé contre les maladies, idéalement sans utilisation excessive d'antibiotiques et d'autres médicaments (car ils peuvent provoquer des résistances, contaminer les eaux et diminuer la présence naturelle de micro-organismes).";
@@ -475,15 +499,18 @@
 
 
 "NOTIFICATION_ACCOUNT_AUTHENTICATED_BODY" = "Votre compte a été authentifié, vous pouvez désormais accéder à l’application.";
-
-
 "NOTIFICATION_ACCOUNT_AUTHENTICATED_TITLE" = "Authentification complétée";
+
+"NOTIFICATION_ACCOUNT_ARCHIVED_BODY" = "Votre compte à été archivé, vous pouvez supprimer l'applicatino.";
+"NOTIFICATION_ACCOUNT_ARCHIVED_TITLE" = "Compte archivé";
 
 
 "NOTIFICATION_REVIEW_PRODUCTS_BODY" = "Répondez à notre enquête rapide.";
-
-
 "NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Retour client";
+
+"NOTIFICATION_ACCOUNT_PHASE2_TITLE" = "Prochaine étape";
+"NOTIFICATION_ACCOUNT_PHASE2_BODY" = "Vous pouvez maintenant utiliser l'application pour faire vos courses.";
+
 
 /*  */
 "NOT_APPLICABLE" = "non applicable";
@@ -495,8 +522,9 @@
 "NO_PRODUCTS_FOUND" = "Désolé, aucun produit trouvé";
 
 
-"OPEN_FORM" = "Let's go!";
+"OPEN_FORM" = "On y va !";
 
+"REOPEN_FORM" = "Retourner à la page précédente";
 
 "OPEN_SETTINGS" = "Ouvrir les paramètres";
 
@@ -537,16 +565,24 @@
 "PRODUCT_CATEGORIES" = "Catégories";
 
 /*  */
-"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Conventionel importé";
+"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Importé conventionnel";
+"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL_DESC" = "Les « produits importés » ont été entièrement produits ou transformés en dehors du Luxembourg. Ils voyagent par voie aérienne, maritime ou terrestre vers les marchés de gros et de détail luxembourgeois. La distance parcourue est appelée « kilomètres-assiette ». Les « produits conventionnels » sont produits, distribués et commercialisés selon des critères autres que ceux de la certification biologique. Ils sont conformes aux normes générales, établies par l'UE et la législation du pays producteur et peuvent avoir des critères supplémentaires, définis dans des programmes et des labels spécifiques.";
+/*  */
+"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Importé biologique";
+"PRODUCT_CATEGORY_IMPORTED_ORGANIC_DESC" = "Les « produits importés » ont été entièrement produits ou transformés en dehors du Luxembourg. Ils voyagent par voie aérienne, maritime ou terrestre vers les marchés de gros et de détail luxembourgeois. La distance parcourue est appelée « kilomètres-assiette ». Les « produits biologiques » sont produits, distribués et commercialisés selon les critères de la certification biologique publique. Ils doivent respecter au moins la législation du pays importateur définissant l'utilisation des pesticides et des engrais, les normes de bien-être animal, les considérations pour la biodiversité, etc. Certains produits peuvent avoir des critères supplémentaires volontaires définis par des certifications biologiques privées.";
+/*  */
+"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Local conventionnel";
+"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL_DESC" = "Les « produits locaux » ont été produits ou transformés au Luxembourg. Ils peuvent être fabriqués à partir d'ingrédients issus de la production nationale, d’ingrédients importés ou d’un mélange des deux. Les « produits conventionnels » sont produits, distribués et commercialisés selon des critères autres que ceux de la certification biologique. Ils sont conformes aux normes générales, définies par la législation européenne et luxembourgeoise et peuvent avoir des critères supplémentaires, définis dans des programmes et des labels spécifiques.";
+/*  */
+"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local biologique";
+"PRODUCT_CATEGORY_LOCAL_ORGANIC_DESC" = "Les « produits locaux » ont été produits ou transformés au Luxembourg. Ils peuvent être fabriqués à partir d'ingrédients issus de la production nationale, d’ingrédients importés ou d’un mélange des deux. Les « produits biologiques » sont produits, distribués et commercialisés selon les critères de la certification biologique publique. Ils doivent respecter au moins la législation biologique de l'UE définissant l'utilisation des pesticides et des engrais, les normes de bien-être animal, les considérations pour la biodiversité, etc. Certains produits peuvent avoir des critères supplémentaires volontaires, définis par des certifications biologiques privées.";
+
 
 /*  */
-"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Bio importé";
+
 
 /*  */
-"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Conventionel local";
 
-/*  */
-"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Bio local";
 
 
 "PRODUCT_COFFEE_IC_DESCRIPTION" = "Composition des cafés Robusta et Arabica en provenance de fermes Rainforest Alliance et UTZ Certified™ uniquement. Le café ne contient aucun additif.";
@@ -572,6 +608,9 @@
 
 "PRODUCT_COFFEE_LO_NAME" = "Café Sidamo Bio";
 
+"PRODUCT_CHOCOSPREADS_LC_NAME" = "Noisette à tartiner - L'originale";
+"PRODUCT_CHOCOSPREADS_LC_DESCRIPTION" = "Pâte à tartiner noisettes du Piémont, chocolat au lait. Un savant mélange entièrement fait maison ! Un secret d'une recette bien gardée pour un plaisir d'exception.";
+"TYPE_CHOCOSPREADS" = "Pâte à tartiner";
 
 "PROFILE" = "Profil";
 
@@ -627,10 +666,10 @@
 "WELCOME_PAGE_1_TITLE" = "Bienvenue dans Goodness Groceries!";
 
 
-"WELCOME_PAGE_3_TEXT" = "Dites-nous ce qui compte pour vous afin de personnaliser votre expérience.";
+"WELCOME_PAGE_3_TEXT" = "Cliquez sur Continuer pour personnaliser votre expérience";
 
 
-"WELCOME_PAGE_3_TITLE" = "Qu'est-ce qui vous importe lorsque vous faites vos courses?";
+"WELCOME_PAGE_3_TITLE" = "Les 4 thèmes de la durabilité";
 
 
 "WELCOME_PAGE_4_TITLE" = "Qu’est-ce qui vous tient le plus à cœur lors de vos courses?";
@@ -647,11 +686,12 @@
 
 "WELCOME_PAGE_7_TEXT" = "Chaque produit sera présenté avec ses indicateurs de durabilité pertinents. Lisez plus sur chaque indicateur en cliquant dessus, et effectuez vos achats en fonction des informations disponibles.";
 
+"WELCOME_PAGE_7_TEXT2" = "J'ai terminé les trois étapes d'inscription.";
 
 "WELCOME_PAGE_7_TITLE" = "Consultez les indicateurs qui comptent pour vous";
 
 
-"WELCOME_PAGE_NOTIFICATIONS_TEXT_1" = "Veuillez autoriser les notifications de Goodness Groceries pour être informé lorsque votre compte a été vérifié et pour recevoir les enquêtes sur les produits et l’application.";
+"WELCOME_PAGE_NOTIFICATIONS_TEXT_1" = "Veuillez autoriser les notifications de Goodness Groceries, pour être informé·e que votre compte a été vérifié, et pour recevoir des notifications pour commenter les produits que vous avez achetés, ainsi que des messages concernant l'étude et l'application.";
 
 
 "WELCOME_PAGE_NOTIFICATIONS_TEXT_2" = "Vos commentaires permettent à l’équipe de recherche de comprendre vos choix de produits alimentaires et de détecter des pistes vers des achats plus durables. Vu qu’il s’agit d’un projet pilote, nous avons également besoin de vos commentaires pour améliorer l’application dans le futur.";
@@ -670,3 +710,4 @@
 
 
 "fr" = "Français";
+

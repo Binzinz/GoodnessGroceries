@@ -9,7 +9,7 @@ struct ProductView: View {
     @StateObject var productsVM = ProductsViewModel()
     @State private var showMore: Bool = false
     @State private var showCompare: Bool = false
-    
+    @State private var showButton: Bool = false
     var body: some View {
         ScrollView (.vertical) {
             ScrollViewReader { value in
@@ -45,12 +45,15 @@ struct ProductView: View {
                                     Text(NSLocalizedString("CATEGORY", lang: UserSettings.language)).bold()
                                     Spacer()
                                 }.frame(width: 120)
-                                Text(NSLocalizedString(product.category.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                                Text(NSLocalizedString(product.category.name, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                                 Spacer()
                             }
                         }
                         Spacer(minLength: 0)
-                        Image("GG_\(product.category.rawValue)")
+                        Image("GG_\(product.category.rawValue)") .onTapGesture {
+                            PopupManager.currentPopup = .productCategory(productCategory: product.category)
+                            impactFeedback(.medium)
+                        }
                     }
                     Divider()
                     let indicators = product.getIndicators(for: category)
@@ -110,11 +113,11 @@ struct ProductView: View {
             }
             .navigationBarTitle(NSLocalizedString("PRODUCT", lang: UserSettings.language))
             .navigationBarItems(trailing:
-                Button(action: {
+                                product.getSimilarProducts().count > 0 ? Button(action: {
                     showCompare = true
                 }, label: {
                     Text(NSLocalizedString("COMPARE", lang: UserSettings.language))
-                })
+                }) : nil
             )
         }
     }

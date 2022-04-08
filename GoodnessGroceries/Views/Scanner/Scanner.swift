@@ -18,7 +18,8 @@ struct Scanner: View {
                 CameraNotAllowedView()
                 if AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized || !askPermissions {
                     CBScanner(supportBarcode: .constant([.qr]), torchLightIsOn: $torchLightIsActive, mockBarCode: .constant(BarcodeData(value: productsVM.products[0].code, type: .qr)), isActive: $scannerIsActive) { search in
-                        if let product = self.productsVM.products.first(where: { $0.code == search.value }) {
+                        let product_index = search.value.range(of: "https://food.daloos.uni.lu/?product=")?.upperBound ?? search.value.startIndex
+                        if let product = self.productsVM.products.first(where: { $0.code == search.value[product_index...]}) {
                             if self.product != product {
                                 self.product = product
                                 notificationFeedback(.success)
@@ -53,7 +54,8 @@ struct Scanner: View {
                     }).offset(x: 20, y: 20)
                 }
             }
-            .JMModal(showModal: $askPermissions, for: [.camera], autoDismiss: true, autoCheckAuthorization: true)
+            .JMModal(showModal: $askPermissions, for: [.camera], autoDismiss: true, autoCheckAuthorization: true, restrictDismissal: false)
+            
             .changeHeaderTo(NSLocalizedString("PERMISSIONS_MODAL_TITLE", lang: UserSettings.language))
             .changeHeaderDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_HEADER", lang: UserSettings.language))
             .changeBottomDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_FOOTER", lang: UserSettings.language))
@@ -68,6 +70,13 @@ struct Scanner: View {
                 torchLightIsActive = false
             }
             .navigationBarTitle(NSLocalizedString("SCANNER", lang: UserSettings.language), displayMode: .inline)
+            .navigationBarItems(trailing: Button(action: {
+                print("Dismissing sheet view...")
+                scannerIsActive = false
+                torchLightIsActive = false
+            }) {
+                Text("Done").bold()
+            })
             .navigationBarHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())

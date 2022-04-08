@@ -3,6 +3,7 @@ import SwiftUI
 struct CategoryIconsGridView: View {
     
     @EnvironmentObject var PopupManager: PopupManager
+    @EnvironmentObject var UserSettings: UserSettings
     @StateObject var categoriesVM = CategoriesViewModel()
     let scale: CGFloat = 0.7
     let padding: CGFloat = 10
@@ -17,6 +18,7 @@ struct CategoryIconsGridView: View {
                     ForEach(categoriesVM.categories[0...1], id: \.self) { category in
                         VStack (spacing: 0) {
                             Image(category.icon_name).resizable().scaledToFit().frame(height: cellHeight * scale)
+                            Text(NSLocalizedString(category.name, lang: UserSettings.language)).font(.system(size: 20))
                         }.frame(width: cellWidth, height: cellHeight)
                         .onTapGesture {
                             PopupManager.currentPopup = .category(category: category)
@@ -28,6 +30,7 @@ struct CategoryIconsGridView: View {
                     ForEach(categoriesVM.categories[2...3], id: \.self) { category in
                         VStack (spacing: 0) {
                             Image(category.icon_name).resizable().scaledToFit().frame(height: cellHeight * scale)
+                            Text(NSLocalizedString(category.name, lang: UserSettings.language)).font(.system(size: 20))
                         }.frame(width: cellWidth, height: cellHeight)
                         .onTapGesture {
                             PopupManager.currentPopup = .category(category: category)

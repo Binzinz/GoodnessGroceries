@@ -16,6 +16,7 @@ enum PopupType {
     case indicator(indicator: Indicator)
     case productIndicator(productIndicator: ProductIndicator)
     case category(category: Category)
+    case productCategory(productCategory: ProductCategory)
     case productImage(image: String)
     case language
     case thankyou

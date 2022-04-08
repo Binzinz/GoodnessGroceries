@@ -18,7 +18,7 @@ class NetworkManager: ObservableObject {
     static let shared = NetworkManager()
     let BASE_URL: String = "https://goodnessgroceries.com/"
     
-    func requestUserAccess(for participant_id: String, product_categories: [String], indicator_categories: [String], completion: @escaping (Result<UserStatus,PopupErrorType>) -> Void) {
+    func requestUserAccess(for participant_id: String, product_categories: [String], indicator_categories: [String], completion: @escaping (Result<UserData,PopupErrorType>) -> Void) {
         if !Connectivity.connected {
             completion(.failure(.network))
             return;
@@ -37,16 +37,23 @@ class NetworkManager: ObservableObject {
             "indicator_category_3": indicator_categories.count > 2 ? indicator_categories[2] : "",
             "indicator_category_4": indicator_categories.count > 3 ? indicator_categories[3] : ""
         ]
-        
+        print(parameters)
         Alamofire.request(BASE_URL + "request_user_access/", method: .post, parameters: parameters).validate().responseJSON { response in
             UserSettings.shared.loading = false
             switch response.result {
                 case .success(_):
-                    let json = JSON(response.data!)
-                    let status = UserStatus(rawValue: json["status"].rawValue as! String)!
-                    completion(.success(status))
+                    do {
+                        let user_data = try JSONDecoder().decode(UserData.self, from: response.data!)
+                        completion(.success(user_data))
+                    } catch {
+                        print("Error while decoding JSON response (request user access)")
+                        print (parameters)
+                    }
                     break
-                    
+                    //let json = JSON(response.data!)
+                    //let status = UserStatus(rawValue: json["status"].rawValue as! String)!
+                    //completion(.success(status))
+                    //break
                 case .failure(_):
                     completion(.failure(.general))
                     break
@@ -54,7 +61,7 @@ class NetworkManager: ObservableObject {
         }
     }
     
-    func fetchUserStatus(for participant_id: String, completion: @escaping (Result<UserStatus,PopupErrorType>) -> Void) {
+    func fetchUserStatus(for participant_id: String, completion: @escaping (Result<UserData,PopupErrorType>) -> Void) {
         if !Connectivity.connected {
             completion(.failure(.network))
             return;
@@ -63,10 +70,14 @@ class NetworkManager: ObservableObject {
         Alamofire.request(BASE_URL + "fetch_user_status/\(participant_id)/", method: .get).validate().responseJSON { response in
             switch response.result {
                 case .success(_):
-                    let json = JSON(response.data!)
-                    let status = UserStatus(rawValue: json["status"].rawValue as! String)!
-                    completion(.success(status))
-                    break
+                do {
+                    let user_data = try JSONDecoder().decode(UserData.self, from: response.data!)
+                    completion(.success(user_data))
+                } catch {
+                    print("Error while decoding JSON response")
+                    print(self.BASE_URL + "fetch_user_status/\(participant_id)/")
+                }
+                break
                     
                 case .failure(_):
                     completion(.failure(.general))

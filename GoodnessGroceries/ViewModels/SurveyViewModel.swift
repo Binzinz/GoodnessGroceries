@@ -19,13 +19,23 @@ class SurveyViewModel: ObservableObject {
         var selected_indicator_secondary_id = ""
         var free_text_indicator = ""
         var price_checkbox_selected = false
-        
+        print(otherreason)
         for (i, indicator) in selected.enumerated() {
             switch indicator {
                 case "price":
                     price_checkbox_selected = true
+                    if i == 0 {
+                        selected_indicator_main_id = indicator
+                    } else {
+                        selected_indicator_secondary_id = indicator
+                    }
                 case "otherreason":
                     free_text_indicator = otherreason
+                    if i == 0 {
+                        selected_indicator_main_id = indicator
+                    } else {
+                        selected_indicator_secondary_id = indicator
+                    }
                 default:
                     if i == 0 {
                         selected_indicator_main_id = indicator
