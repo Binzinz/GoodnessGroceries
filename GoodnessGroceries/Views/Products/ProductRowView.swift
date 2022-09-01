@@ -20,7 +20,7 @@ struct ProductRowView: View {
                     .stroke(style: StrokeStyle(lineWidth: 1, dash: [2]))
                     .frame(width: 1, height: 100)
                     .foregroundColor(Color(.systemGray3))
-                IndicatorIconsView(indicators: product.getIndicators(for: category))
+                IndicatorIconsView(indicators: product.getIndicators_row(for: category))
             }
         }
         .padding(.vertical, 5)

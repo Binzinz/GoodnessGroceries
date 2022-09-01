@@ -79,7 +79,9 @@ struct ProductIndicatorPopup: View {
                     }
                     ScrollView(.vertical, showsIndicators: false) {
                     VStack (alignment: .leading, spacing: 15) {
-                        ForEach(productIndicator.sub_indicators, id: \.self) { productSubIndicator in
+                        Text(NSLocalizedString(productIndicator.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                        
+                        /*ForEach(productIndicator.sub_indicators, id: \.self) { productSubIndicator in
                             VStack (alignment: .leading, spacing: 0) {
                                 Text(NSLocalizedString(productSubIndicator.name, lang: UserSettings.language)).font(.headline)
                                 //Text(NSLocalizedString(productSubIndicator.description, lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
@@ -103,7 +105,7 @@ struct ProductIndicatorPopup: View {
                             if productSubIndicator.self != productIndicator.sub_indicators.last {
                                 Divider()
                             }
-                        }
+                        }*/
                     }
                     .frame(
                         minWidth: 0,
@@ -159,14 +161,18 @@ struct ProductCategoryPopup: View {
                     Image("GG_\(Productcategory.rawValue)")
                     Text(NSLocalizedString(Productcategory.name, lang: UserSettings.language)).font(.headline)
                 }
-                if (NSLocalizedString(Productcategory.description, lang: UserSettings.language).count > 700 && screenHeight < 700)
+                if ((NSLocalizedString(Productcategory.description, lang: UserSettings.language).count + NSLocalizedString(Productcategory.description2, lang: UserSettings.language).count) > 700 && screenHeight < 700)
                 {
                     ScrollView(.vertical, showsIndicators: false) {
                         Text(NSLocalizedString(Productcategory.description, lang: UserSettings.language))
+                        Text("")
+                        Text(NSLocalizedString(Productcategory.description2, lang: UserSettings.language))
                     }
                 }
                 else {
                     Text(NSLocalizedString(Productcategory.description, lang: UserSettings.language))
+                    Text("")
+                    Text(NSLocalizedString(Productcategory.description2, lang: UserSettings.language))
                 }
                 BlueButton(label: "Ok", action: {
                     PopupManager.showPopup = false
@@ -256,12 +262,17 @@ struct LanguagePopup: View {
 }
 
 struct ProductImagePopup: View {
-    
+    @EnvironmentObject var UserSettings: UserSettings
     let image: String
+    let name: String
     
     var body: some View {
         PopupView {
-            Image(image).resizable().scaledToFit().frame(maxWidth: 400)
+            VStack {
+                Image(image).resizable().scaledToFit().frame(maxWidth: 400)
+                Text(NSLocalizedString(name, lang: UserSettings.language).replacingOccurrences(of: " - ", with: "\n")).font(.system(size: 20))
+            }
+            
         }
     }
 }

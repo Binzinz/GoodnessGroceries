@@ -8,48 +8,53 @@ struct WaitPhase2View: View {
     @EnvironmentObject var PopupManager: PopupManager
     @StateObject var welcomeVM = WelcomeViewModel()
     var body: some View {
-        VStack {
-            HStack (spacing: 25) {
-                Image("GG-Logo-1")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(height: 120)
-            }.padding(.bottom, 15)
-            
-            VStack (alignment: .center, spacing: 30) {
-                Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TITLE", lang: UserSettings.language)).font(.title)
-                VStack (alignment: .leading, spacing: 15) {
-                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_1", lang: UserSettings.language) + " " + UserSettings.phase1_date.localize_date() + ".")
-                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_2", lang: UserSettings.language))
-                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_3", lang: UserSettings.language))
-                }
-                Spacer(minLength: 0)
-                HStack (spacing: 10) {
-                    Spacer(minLength: 0)
-                    Text(UserSettings.phase2_date.day_left() + " " + NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_4", lang: UserSettings.language)).font(.system(size: 56.0))
-                    Spacer(minLength: 0)
-                }
-                Spacer(minLength: 0)
-                HStack (spacing: 10) {
-                    Spacer(minLength: 0)
-                    Image("uni_logo")
+        ScrollView(.vertical, showsIndicators: true) {
+            VStack {
+                HStack (spacing: 25) {
+                    Image("GG-Logo-1")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 120)
-                    Image("pall_center")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 120)
+                }.padding(.bottom, 15)
+                
+                VStack (alignment: .center, spacing: 30) {
+                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true)
+                    VStack (alignment: .leading, spacing: 15) {
+                        Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_1", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_2", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                            .fixedSize(horizontal: false, vertical: true)
+                        Text(NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_3", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                            .fixedSize(horizontal: false, vertical: true)
+                    }
                     Spacer(minLength: 0)
+                    HStack (spacing: 10) {
+                        Spacer(minLength: 0)
+                        Text(UserSettings.phase2_date.day_left() + " " + NSLocalizedString("AUTHENTICATION_REQUESTED_WAIT_TEXT_4", lang: UserSettings.language)).font(.system(size: 56.0))
+                        Spacer(minLength: 0)
+                    }
+                    Spacer(minLength: 0)
+                    HStack (spacing: 10) {
+                        Spacer(minLength: 0)
+                        Image("uni_logo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 120)
+                        Image("pall_center")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 120)
+                        Spacer(minLength: 0)
+                    }
+                    HStack (spacing: 10) {
+                        Link(NSLocalizedString("LINK_WEBSITE", lang: UserSettings.language), destination: URL(string: "https://food.uni.lu/goodness-groceries")!).font(.system(size: 14.0))
+                        Spacer(minLength: 0)
+                        Link(NSLocalizedString("LINK_CONTACT_US", lang: UserSettings.language), destination: URL(string: "https://food.uni.lu/goodness-groceries/contact-us")!).font(.system(size: 14.0))
+                        Spacer(minLength: 0)
+                    }
                 }
-                HStack (spacing: 10) {
-                    Link("Goodness Groceries homepage", destination: URL(string: "https://food.uni.lu/goodness-groceries")!).font(.system(size: 14.0))
-                    Spacer(minLength: 0)
-                    Link("Contact us", destination: URL(string: "https://food.uni.lu/goodness-groceries/contact-us")!).font(.system(size: 14.0))
-                    Spacer(minLength: 0)
-                }
-            }
-        }.padding()
+            }.padding()
+        }
     }
     
     func login() {

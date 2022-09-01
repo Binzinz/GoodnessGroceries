@@ -3,7 +3,8 @@ import Foundation
 struct ProductIndicator: Hashable, Decodable {
     var id: String
     var applicable: Bool
-    var sub_indicators: [ProductSubIndicator]
+    var description: String
+   // var sub_indicators: [ProductSubIndicator]
     
     func getIndicator() -> Indicator? {
         let productsVM = ProductsViewModel()
@@ -15,9 +16,9 @@ struct ProductIndicator: Hashable, Decodable {
 /*extension ProductIndicator: Identifiable {
     var id: String { id }
 }*/
-
+/*
 struct ProductSubIndicator: Hashable, Decodable {
     var name: String
     var description: String
     var file: String?
-}
+}*/

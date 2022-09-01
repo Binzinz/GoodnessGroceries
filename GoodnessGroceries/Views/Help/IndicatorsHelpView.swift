@@ -6,7 +6,7 @@ struct IndicatorsHelpView: View {
     @StateObject var categoriesVM = CategoriesViewModel()
     @EnvironmentObject var UserSettings: UserSettings
     @State var selected: Set<Indicator> = []
-    
+   
     var body: some View {
         ScrollView (.vertical, showsIndicators: true) {
             VStack (alignment: .leading, spacing: 10) {
@@ -40,7 +40,7 @@ struct IndicatorsHelpView: View {
                     }
                 }
             }.padding()
-        }.navigationBarTitle(NSLocalizedString("HELP_PAGE_BUTTON_1", lang: UserSettings.language), displayMode: .inline)
+        }.navigationBarTitle(NSLocalizedString("HELP_PAGE_BUTTON_0", lang: UserSettings.language), displayMode: .inline)
     }
 }
 

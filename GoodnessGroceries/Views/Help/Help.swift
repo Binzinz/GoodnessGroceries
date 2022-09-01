@@ -4,7 +4,8 @@ struct Help: View {
     
     @Environment(\.openURL) var openURL
     @EnvironmentObject var UserSettings: UserSettings
-
+    var resetNavigationID: UUID
+    
     var body: some View {
         NavigationView {
             VStack (alignment: .leading, spacing: 0) {
@@ -18,18 +19,24 @@ struct Help: View {
                         Image("uni_logo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: 120)
+                            .frame(height: 80)
                         Image("pall_center")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: 120)
+                            .frame(height: 80)
                     }
                 }.padding()
                 Divider()
                 Form {
                     Section(header: Text(NSLocalizedString("HELP", lang: UserSettings.language))) {
                         NavigationLink(destination: IndicatorsHelpView()) {
+                            Text(NSLocalizedString("HELP_PAGE_BUTTON_0", lang: UserSettings.language))
+                        }.isDetailLink(false)
+                        NavigationLink(destination: ProductCategoriesHelpView()) {
                             Text(NSLocalizedString("HELP_PAGE_BUTTON_1", lang: UserSettings.language))
+                        }
+                        NavigationLink(destination: SymbolsHelpView()) {
+                            Text(NSLocalizedString("HELP_PAGE_BUTTON_12", lang: UserSettings.language))
                         }
                         Button(action: {
                             openURL(URL(string: "https://food.uni.lu/goodness-groceries/")!)
@@ -52,5 +59,6 @@ struct Help: View {
             .navigationBarTitle(NSLocalizedString("HELP", lang: UserSettings.language), displayMode: .inline)
             .navigationBarHidden(true)
         }.navigationViewStyle(StackNavigationViewStyle())
+            .id(resetNavigationID)
     }
 }

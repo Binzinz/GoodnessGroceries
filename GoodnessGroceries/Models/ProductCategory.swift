@@ -2,6 +2,8 @@ import Foundation
 import SwiftUI
 
 enum ProductCategory: String, Codable, CustomStringConvertible, CaseIterable {
+    
+    
     case localOrganic = "local_organic"
     case importedOrganic = "imported_organic"
     case localConventional = "local_conventional"
@@ -16,10 +18,19 @@ enum ProductCategory: String, Codable, CustomStringConvertible, CaseIterable {
     }
     var description: String {
         switch self {
-            case .localOrganic: return "PRODUCT_CATEGORY_LOCAL_ORGANIC_DESC"
-            case .localConventional: return "PRODUCT_CATEGORY_LOCAL_CONVENTIONAL_DESC"
-            case .importedOrganic: return "PRODUCT_CATEGORY_IMPORTED_ORGANIC_DESC"
-            case .importedConventional: return "PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL_DESC"
+            case .localOrganic: return "PRODUCT_CATEGORY_LOCAL_DESC"
+            case .localConventional: return "PRODUCT_CATEGORY_LOCAL_DESC"
+            case .importedOrganic: return "PRODUCT_CATEGORY_IMPORTED_DESC"
+            case .importedConventional: return "PRODUCT_CATEGORY_IMPORTED_DESC"
+        }
+    }
+    
+    var description2: String {
+        switch self {
+            case .localOrganic: return "PRODUCT_CATEGORY_ORGANIC_DESC"
+            case .localConventional: return "PRODUCT_CATEGORY_CONVENTIONAL_DESC"
+            case .importedOrganic: return "PRODUCT_CATEGORY_ORGANIC_DESC"
+            case .importedConventional: return "PRODUCT_CATEGORY_CONVENTIONAL_DESC"
         }
     }
 }

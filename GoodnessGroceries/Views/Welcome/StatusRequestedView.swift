@@ -21,10 +21,10 @@ struct StatusRequestedView: View {
             }.padding(.bottom, 15)
             
             VStack (alignment: .center, spacing: 30) {
-                Text(NSLocalizedString("AUTHENTICATION_REQUESTED_VALID_TITLE", lang: UserSettings.language)).font(.title)
+                Text(NSLocalizedString("AUTHENTICATION_REQUESTED_VALID_TITLE", lang: UserSettings.language)).font(.title).fixedSize(horizontal: false, vertical: true)
                 VStack (alignment: .leading, spacing: 15) {
-                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_VALID_TEXT_1", lang: UserSettings.language))
-                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_VALID_TEXT_3", lang: UserSettings.language))
+                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_VALID_TEXT_1", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_VALID_TEXT_3", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                 }
                 BlueButton(label: NSLocalizedString("REOPEN_FORM", lang: UserSettings.language), action: {
                         DispatchQueue.main.async {

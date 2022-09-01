@@ -5,6 +5,7 @@ struct Profile: View {
     @EnvironmentObject var UserSettings: UserSettings
     @EnvironmentObject var PopupManager: PopupManager
     @State var languages = ["fr", "en"]
+    var resetNavigationID: UUID
     
     var body: some View {
         NavigationView {
@@ -64,5 +65,6 @@ struct Profile: View {
             }
             .navigationBarTitle(NSLocalizedString("PROFILE", lang: UserSettings.language))
         }.navigationViewStyle(StackNavigationViewStyle())
+            .id(resetNavigationID)
     }
 }

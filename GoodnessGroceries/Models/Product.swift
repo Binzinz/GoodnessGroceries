@@ -19,7 +19,7 @@ struct Product: Hashable, Decodable {
         var result = [Indicator]()
         
         for productIndicator in self.indicators {
-            if productIndicator.applicable && productIndicator.sub_indicators.count > 0 {
+            if productIndicator.applicable {
                 if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.id }) {
                     if category != nil && indicator.category_id == category!.id || category == nil {
                         if ignoreCategory != nil && indicator.category_id != ignoreCategory!.id || ignoreCategory == nil {
@@ -32,6 +32,26 @@ struct Product: Hashable, Decodable {
 
         return result
     }
+    
+    func getIndicators_row(for category: Category? = nil, except ignoreCategory: Category? = nil) -> [Indicator] {
+        let productsVM = ProductsViewModel()
+        var result = [Indicator]()
+        
+        for productIndicator in self.indicators {
+            if productIndicator.applicable && productIndicator.description != "" {
+                if let indicator = productsVM.indicators.first(where: { $0.id == productIndicator.id }) {
+                    if category != nil && indicator.category_id == category!.id || category == nil {
+                        if ignoreCategory != nil && indicator.category_id != ignoreCategory!.id || ignoreCategory == nil {
+                            result.append(indicator)
+                        }
+                    }
+                }
+            }
+        }
+
+        return result
+    }
+    
     
     func getSimilarProducts() -> [Product]  {
         let productsVM = ProductsViewModel()
@@ -49,7 +69,7 @@ struct Product: Hashable, Decodable {
             if !productIndicator.applicable {
                 return .not_applicable
             } else {
-                return productIndicator.sub_indicators.count > 0 ? .yes : .no
+                return productIndicator.description != "" ? .yes : .no
             }
         }
         return .no

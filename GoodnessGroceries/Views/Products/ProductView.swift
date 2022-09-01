@@ -16,7 +16,7 @@ struct ProductView: View {
                 VStack (alignment: .leading, spacing: 12) {
                     HStack (alignment: .top, spacing: 15) {
                         ProductImageView(url: product.image_url).onTapGesture {
-                            PopupManager.currentPopup = .productImage(image: product.image_url)
+                            PopupManager.currentPopup = .productImage(image: product.image_url, name: product.name)
                         }
                         Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.title).bold().fixedSize(horizontal: false, vertical: true)
                     }
@@ -62,14 +62,14 @@ struct ProductView: View {
                         
                         ForEach(indicators, id: \.self) { indicator in
                             if let productIndicator = product.indicators.first(where: { $0.id == indicator.id }) {
-                                if productIndicator.applicable && productIndicator.sub_indicators.count > 0 {
+                                if productIndicator.applicable && productIndicator.description != "" {
                                     ProductIndicatorRowView(productIndicator: productIndicator).id(indicator.id)
                                 }
                             }
                         }
                         let otherIndicators = product.getIndicators(except: category)
                         if category != nil && otherIndicators.count > 0 {
-                            Button(action: {
+                            /*Button(action: {
                                 withAnimation(.linear(duration: 0.15)) {
                                     showMore.toggle()
                                 }
@@ -80,19 +80,19 @@ struct ProductView: View {
                                     Image("arrow_right").rotationEffect(.degrees(showMore ? 90 : 0))
                                 }
                             })
-                            if showMore {
+                            if showMore {*/
                                 ForEach(otherIndicators, id: \.self) { indicator in
                                     if let productIndicator = product.indicators.first(where: { $0.id == indicator.id }) {
-                                        if productIndicator.applicable && productIndicator.sub_indicators.count > 0 {
+                                        if productIndicator.applicable && productIndicator.description != "" {
                                             ProductIndicatorRowView(productIndicator: productIndicator).id(indicator.id)
                                         }
                                     }
-                                }.onAppear {
-                                    withAnimation(.default) {
+                                }//.onAppear {
+                                 /*   withAnimation(.default) {
                                         value.scrollTo(otherIndicators.last?.id, anchor: .bottom)
                                     }
-                                }
-                            }
+                                }*/
+                            //}
                         }
                     }
                     let similarProducts = product.getSimilarProducts()

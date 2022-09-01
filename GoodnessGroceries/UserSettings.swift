@@ -5,7 +5,7 @@ import SwiftUI
 class UserSettings: ObservableObject {
     static let shared = UserSettings()
     let objectWillChange = ObservableObjectPublisher()
-    let sharedUserDefaults = UserDefaults(suiteName: "group.lu.uni.bicslab.goodnessgroceries")
+    let sharedUserDefaults = UserDefaults(suiteName: "group.lu.uni.bicslab.goodness.groceries")
     
     var step: Int {
         get {
@@ -104,9 +104,9 @@ class UserSettings: ObservableObject {
         willSet { self.objectWillChange.send() }
     }
     
-    var showCountDown: Bool = true {
-        willSet { self.objectWillChange.send() }
-    }
+    //var showCountDown: Bool = true {
+     //   willSet { self.objectWillChange.send() }
+    //}
     
     var loading: Bool = false {
         willSet { self.objectWillChange.send() }
@@ -144,6 +144,7 @@ class UserSettings: ObservableObject {
     }
     
     func handleShowWelcome() {
+        @EnvironmentObject var UserSettings: UserSettings
         print(step)
         print(statusRequested)
         //let calendar = Calendar.currentCalendar()
@@ -166,15 +167,16 @@ class UserSettings: ObservableObject {
         print(statusPhase2)
         print(p2)
         print(now)
+        if step == 6 && !statusRequested {
+            step += 1
+        }
 
-        
-        
-        if step >= 9 && !statusRequested && statusPhase2 { // # of welcome pages
+        if step >= 6 && !statusRequested && statusPhase2 { // # of welcome pages
             self.showWelcome = false
-            self.showCountDown = false
+            //self.showCountDown = false
         } else {
             self.showWelcome = true
-            self.showCountDown = true
+            //self.showCountDown = true
         }
     }
 }

@@ -54,7 +54,9 @@ struct Welcome_page2: View {
     @EnvironmentObject var UserSettings: UserSettings
     @State var isPresentingScanner: Bool = false
     @State var askPermissions: Bool = true
-    
+    @State var disableButton: Bool = true
+    @EnvironmentObject var PopupManager: PopupManager
+    @StateObject var welcomeVM = WelcomeViewModel()
     
     var body: some View {
         VStack {
@@ -68,7 +70,7 @@ struct Welcome_page2: View {
             VStack (alignment: .center, spacing: 30) {
                 VStack (spacing: 10) {
                     TextField(NSLocalizedString("CLIENT_ID", lang: UserSettings.language), text: $UserSettings.clientID
-                              ,onEditingChanged: {changed in
+    ,onEditingChanged: {changed in
                         print(changed)
                     }).introspectTextField { textField in
                         let toolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: textField.frame.size.width, height: 44))
@@ -80,6 +82,7 @@ struct Welcome_page2: View {
                         textField.inputAccessoryView = toolBar
                         textField.keyboardType = .numberPad
                     }
+                    
                 
                     
                     Rectangle()
@@ -94,7 +97,16 @@ struct Welcome_page2: View {
                     Text(NSLocalizedString("SCAN_DIRECTLY", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true).foregroundColor(Color("GG_D_Blue"))
                 }).padding()
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
-                    UserSettings.step += 1
+                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    welcomeVM.login { success in
+                        if success {
+                            UserSettings.step += 1
+                        } else {
+                            PopupManager.currentPopup = .message(title: NSLocalizedString("WRONG_FORMAT_ALERT_TITLE", lang: UserSettings.language), message: NSLocalizedString("WRONG_FORMAT_ALERT_TEXT", lang: UserSettings.language))
+                            notificationFeedback(.warning)
+                        }
+                    }
+                    
                 })
                     
                 Spacer(minLength: 0)
@@ -128,7 +140,7 @@ struct Welcome_page2: View {
             .changeHeaderTo(NSLocalizedString("PERMISSIONS_MODAL_TITLE", lang: UserSettings.language))
             .changeHeaderDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_HEADER", lang: UserSettings.language))
             .changeBottomDescriptionTo(NSLocalizedString("PERMISSIONS_MODAL_FOOTER", lang: UserSettings.language))
-            .setPermissionComponent(for: .camera, image: AnyView(Image(systemName: "camera.fill")), title: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_TITLE", lang: UserSettings.language), description: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_DESCRIPTION", lang: UserSettings.language))
+            .setPermissionComponent(for: .camera, image: AnyView(Image(systemName: "camera.fill")), title: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_TITLE", lang: UserSettings.language), description: NSLocalizedString("PERMISSIONS_MODAL_CAMERA_DESCRIPTION",lang: UserSettings.language))
             .setAccentColor(toPrimary: Color("GG_D_Blue"), toTertiary: Color(.systemRed))
         }
     }
@@ -271,7 +283,7 @@ struct Welcome_page6: View {
                 ScrollView(.vertical, showsIndicators: true) {
                     VStack (spacing: 10) {
                         Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_1", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
-                        Text(NSLocalizedString("WELCOME_PAGE_NOTIFICATIONS_TEXT_2", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                        
                     }
                 }
                 BlueButton(label: NSLocalizedString("CONTINUE", lang: UserSettings.language), action: {
@@ -299,7 +311,7 @@ struct Welcome_page6: View {
     }
 }
 
-struct Welcome_page7: View {
+struct Welcome_page8: View {
     @EnvironmentObject var UserSettings: UserSettings
     @State var dataString = "123"
     @State var barcodeType = CBBarcodeView.BarcodeType.qrCode
@@ -338,7 +350,7 @@ struct Welcome_page7: View {
     }
 }
 
-struct Welcome_page8: View {
+struct Welcome_page9: View {
     
     @EnvironmentObject var UserSettings: UserSettings
     @Environment(\.openURL) var openURL
@@ -373,7 +385,7 @@ struct Welcome_page8: View {
     }
 }
 
-struct Welcome_page9: View {
+struct Welcome_page7: View {
     
     @Environment(\.openURL) var openURL
     @EnvironmentObject var UserSettings: UserSettings
@@ -392,8 +404,8 @@ struct Welcome_page9: View {
             VStack (alignment: .center, spacing: 30) {
                 Text(NSLocalizedString("AUTHENTICATION_REQUESTED_TITLE", lang: UserSettings.language)).font(.title)
                 VStack (alignment: .leading, spacing: 15) {
-                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_TEXT_1", lang: UserSettings.language))
-                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_TEXT_2", lang: UserSettings.language))
+                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_TEXT_1", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
+                    Text(NSLocalizedString("AUTHENTICATION_REQUESTED_TEXT_2", lang: UserSettings.language)).fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer(minLength: 0)
                 

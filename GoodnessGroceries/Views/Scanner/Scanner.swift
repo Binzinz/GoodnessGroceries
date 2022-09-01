@@ -11,6 +11,7 @@ struct Scanner: View {
     @State var scannerIsActive: Bool = true
     @State var torchLightIsActive: Bool = false
     @State var askPermissions: Bool = true
+    var resetNavigationID: UUID
     
     var body: some View {
         NavigationView {
@@ -18,7 +19,7 @@ struct Scanner: View {
                 CameraNotAllowedView()
                 if AVCaptureDevice.authorizationStatus(for: AVMediaType.video) == .authorized || !askPermissions {
                     CBScanner(supportBarcode: .constant([.qr]), torchLightIsOn: $torchLightIsActive, mockBarCode: .constant(BarcodeData(value: productsVM.products[0].code, type: .qr)), isActive: $scannerIsActive) { search in
-                        let product_index = search.value.range(of: "https://food.daloos.uni.lu/?product=")?.upperBound ?? search.value.startIndex
+                        let product_index = search.value.range(of: "https://food.uni.lu/goodness-groceries/?product=")?.upperBound ?? search.value.startIndex
                         if let product = self.productsVM.products.first(where: { $0.code == search.value[product_index...]}) {
                             if self.product != product {
                                 self.product = product
@@ -30,6 +31,7 @@ struct Scanner: View {
                             }
                         }
                     }.edgesIgnoringSafeArea(.all)
+                        .padding(.bottom)
                     if let product = self.product {
                         VStack {
                             Spacer()
@@ -40,7 +42,7 @@ struct Scanner: View {
                                     .cornerRadius(7)
                                     .shadow(color: Color.black.opacity(0.5), radius: 5, x: 0, y: 5)
                                     .padding(.horizontal, 20)
-                            }.padding(.bottom, 35)
+                            }
                         }
                     }
                     Button(action: {
@@ -80,6 +82,7 @@ struct Scanner: View {
             .navigationBarHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .id(resetNavigationID)
     }
 }
 

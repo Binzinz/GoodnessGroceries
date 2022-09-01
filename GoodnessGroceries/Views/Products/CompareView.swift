@@ -21,14 +21,20 @@ struct CompareView: View {
                     ForEach(products, id: \.self) { product in
                         Divider()
                         VStack (alignment: .leading, spacing: 10) {
+                            //Spacer(minLength: 0)
                             ProductImageView(url: product.image_url, width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
                                 .onTapGesture {
-                                PopupManager.currentPopup = .productImage(image: product.image_url)
+                                    PopupManager.currentPopup = .productImage(image: product.image_url, name:product.name)
                             }
-                            Text(NSLocalizedString(product.name, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
-                            Spacer(minLength: 0)
+                            //Text(NSLocalizedString(product.provider, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
+                            //    .onTapGesture {
+                            //        PopupManager.currentPopup = .productImage(image: product.image_url, name:product.name)
+                            //    }
+                            //Spacer(minLength: 0)
                         }.padding(.horizontal, 5).frame(width: cellWidth, height: cellWidth*1.5)
+                        
                     }
+                    Divider()
                 }.frame(height: cellWidth*1.5)
                 Divider()
                 ScrollView (.vertical, showsIndicators: true) {
@@ -41,12 +47,18 @@ struct CompareView: View {
                             }.rotationEffect(.degrees( -90)).frame(width: geometry.size.width*0.15)
                             ForEach(products, id: \.self) { product in
                                 Divider()
-                                VStack (alignment: .leading, spacing: 10) {
-                                    Image("GG_\(product.category.rawValue)").resizable().scaledToFit().frame(width: cellWidth-20, height: cellWidth-20).padding(.top, 10)
-                                    Text(NSLocalizedString(product.category.description, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
-                                    Spacer(minLength: 0)
+                                VStack (alignment: .leading, spacing: 0) {
+                                    Image("GG_\(product.category.rawValue)").resizable().scaledToFit().frame(width: cellWidth-20, height: cellWidth-20).padding(.top, 5)
+                                    //Text(NSLocalizedString(product.category.description, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
+                                    //Text(NSLocalizedString(product.category.description2, lang: UserSettings.language)).font(.system(size: 12)).multilineTextAlignment(.center)
+                                    //Spacer(minLength: 0)
                                 }.padding(.horizontal, 5).frame(width: cellWidth, height: cellWidth*1.5)
+                                    .onTapGesture {
+                                        PopupManager.currentPopup = .productCategory(productCategory: product.category)
+                                        impactFeedback(.medium)
+                                    }
                             }
+                            Divider()
                         }.frame(height: cellWidth*1.5)
                         Divider()
                         ForEach(categoriesVM.categories, id: \.self) { category in
@@ -92,9 +104,11 @@ struct CompareView: View {
                                                     Image(systemName: "checkmark").foregroundColor(Color("GG_D_Green")).frame(width: cellWidth).font(Font.system(size: 20, weight: .bold))
                                                 case .no:
                                                     Divider()
-                                                    Text("Ø").frame(width: cellWidth).font(Font.system(size: 20, weight: .bold)).foregroundColor(Color(.systemRed))
+                                                Text("Ø").frame(width: cellWidth).font(Font.system(size: 20, weight: .bold)).foregroundColor(Color(.systemRed))
                                                 case .not_applicable:
-                                                    if product == products.last {
+                                                    Divider()
+                                                    Text("n/a").frame(width: cellWidth).font(Font.system(size: 20, weight: .regular)).foregroundColor(Color(.systemGray))
+                                                   /* if product == products.last {
                                                         Divider()
                                                         HStack (spacing: 0) {
                                                             Text(NSLocalizedString("NOT_APPLICABLE", lang: UserSettings.language))
@@ -103,9 +117,10 @@ struct CompareView: View {
                                                                 .padding(.leading)
                                                             Spacer()
                                                         }.frame(width: cellWidth*4)
-                                                    }
+                                                    }*/
                                             }
                                         }
+                                        Divider()
                                     }
                                     Divider()
                                 }
@@ -116,6 +131,6 @@ struct CompareView: View {
             }
             .navigationTitle(NSLocalizedString("COMPARE", lang: UserSettings.language))
             .navigationBarTitleDisplayMode(.inline)
-        }
+        }.padding(.bottom)
     }
 }

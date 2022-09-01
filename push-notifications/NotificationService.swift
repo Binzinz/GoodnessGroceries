@@ -19,7 +19,7 @@ class NotificationService: UNNotificationServiceExtension {
         
         if let bestAttemptContent = bestAttemptContent {
             var language: String = "en"
-            if let userDefaults = UserDefaults(suiteName: "group.lu.uni.bicslab.goodnessgroceries") {
+            if let userDefaults = UserDefaults(suiteName: "group.lu.uni.bicslab.goodness.groceries") {
                 language = userDefaults.string(forKey: "language") ?? "en"
             }
             

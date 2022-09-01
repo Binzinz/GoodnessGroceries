@@ -11,6 +11,8 @@
 		3D14FCF427AC2955006CBC50 /* WaitPhase2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D14FCF327AC2955006CBC50 /* WaitPhase2View.swift */; };
 		3D49DF7227A2968B00E92AFC /* ExpandableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49DF7127A2968B00E92AFC /* ExpandableText.swift */; };
 		3D49DF7427A296C800E92AFC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D49DF7327A296C800E92AFC /* Extensions.swift */; };
+		3D5DDE9728893D4A00B1A160 /* SymbolsHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5DDE9628893D4A00B1A160 /* SymbolsHelpView.swift */; };
+		3DA9E2A3281BD2BD00873602 /* ProductCategoriesHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA9E2A2281BD2BD00873602 /* ProductCategoriesHelpView.swift */; };
 		3DAF28BF27F594C400BA3518 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF28BE27F594C400BA3518 /* LICENSE.md */; };
 		3DAF28C027F594C400BA3518 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF28BE27F594C400BA3518 /* LICENSE.md */; };
 		7202B2D12562DB4000B4C924 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7202B2D02562DB4000B4C924 /* SearchView.swift */; };
@@ -119,6 +121,8 @@
 		3D14FCF327AC2955006CBC50 /* WaitPhase2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitPhase2View.swift; sourceTree = "<group>"; };
 		3D49DF7127A2968B00E92AFC /* ExpandableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableText.swift; sourceTree = "<group>"; };
 		3D49DF7327A296C800E92AFC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3D5DDE9628893D4A00B1A160 /* SymbolsHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsHelpView.swift; sourceTree = "<group>"; };
+		3DA9E2A2281BD2BD00873602 /* ProductCategoriesHelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCategoriesHelpView.swift; sourceTree = "<group>"; };
 		3DAF28BE27F594C400BA3518 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		7202B2D02562DB4000B4C924 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		72063A33262D9B340000FEE7 /* CompareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareView.swift; sourceTree = "<group>"; };
@@ -270,6 +274,8 @@
 			children = (
 				72EBD396260A0D0C0052B22D /* Help.swift */,
 				726A082F263AB170009B1F95 /* IndicatorsHelpView.swift */,
+				3DA9E2A2281BD2BD00873602 /* ProductCategoriesHelpView.swift */,
+				3D5DDE9628893D4A00B1A160 /* SymbolsHelpView.swift */,
 			);
 			path = Help;
 			sourceTree = "<group>";
@@ -637,6 +643,7 @@
 				7262094525E3C0CC004A3693 /* Welcome.swift in Sources */,
 				72AC8ADB25128B4A00C0887F /* UserSettings.swift in Sources */,
 				7233D7BA2525C49A0087E9EF /* ProductRowView.swift in Sources */,
+				3DA9E2A3281BD2BD00873602 /* ProductCategoriesHelpView.swift in Sources */,
 				3D49DF7227A2968B00E92AFC /* ExpandableText.swift in Sources */,
 				72AC8AD725127FD100C0887F /* BlueButton.swift in Sources */,
 				7271B48E26133B3A00CC0CA6 /* Popups.swift in Sources */,
@@ -663,6 +670,7 @@
 				7285D35D255BEAF4004D6E14 /* WelcomeCategoryCellView.swift in Sources */,
 				720CD9A7262EFF5B00FDB4AE /* ProductImageView.swift in Sources */,
 				722ED7CE261E3ABD00FAFF4D /* ProductCategoryListView.swift in Sources */,
+				3D5DDE9728893D4A00B1A160 /* SymbolsHelpView.swift in Sources */,
 				72D913E02518EC9D00CA817D /* ProductsViewModel.swift in Sources */,
 				72999F082524C8720018750E /* ProductScannedView.swift in Sources */,
 				72999EFD2524C7850018750E /* CategoryListView.swift in Sources */,
@@ -711,7 +719,7 @@
 				CODE_SIGN_ENTITLEMENTS = "push-notifications/push-notificationsDebug.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6733725FT8;
 				INFOPLIST_FILE = "push-notifications/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -720,6 +728,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "lu.uni.bicslab.goodness.groceries.push-notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -735,7 +744,7 @@
 				CODE_SIGN_ENTITLEMENTS = "push-notifications/push-notificationsRelease.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6733725FT8;
 				INFOPLIST_FILE = "push-notifications/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -744,6 +753,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "lu.uni.bicslab.goodness.groceries.push-notifications";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -879,7 +889,7 @@
 				CODE_SIGN_ENTITLEMENTS = GoodnessGroceries/GoodnessGroceries.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"GoodnessGroceries/Preview Content\"";
 				DEVELOPMENT_TEAM = 6733725FT8;
 				ENABLE_PREVIEWS = YES;
@@ -889,6 +899,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = lu.uni.bicslab.goodness.groceries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -906,7 +917,7 @@
 				CODE_SIGN_ENTITLEMENTS = GoodnessGroceries/GoodnessGroceriesRelease.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 29;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"GoodnessGroceries/Preview Content\"";
 				DEVELOPMENT_TEAM = 6733725FT8;
 				ENABLE_PREVIEWS = YES;
@@ -916,6 +927,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = lu.uni.bicslab.goodness.groceries;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

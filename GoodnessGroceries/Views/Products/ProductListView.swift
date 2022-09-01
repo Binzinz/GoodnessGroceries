@@ -2,8 +2,8 @@ import SwiftUI
 
 struct ProductListView: View {
     
-    let category: Category
-    let product_category: ProductCategory
+    let category: Category?
+    let product_category: ProductCategory?
     @EnvironmentObject var UserSettings: UserSettings
     @StateObject var productsVM = ProductsViewModel()
     
@@ -30,8 +30,26 @@ struct ProductListView: View {
         return self.productsVM.products.filter { product in
             for productIndicator in product.indicators {
                 if let indicator = self.productsVM.indicators.first(where: { $0.id == productIndicator.id }) {
-                    if indicator.category_id == category.id && product.category == product_category && productIndicator.sub_indicators.count > 0 {
+                    if category != nil && product_category != nil {
+                        if indicator.category_id == category!.id && product.category == product_category {
+                            return true
+                        }
+                    }
+                    else if category == nil && product_category == nil {
                         return true
+                    }
+                    else if category == nil &&  product_category != nil {
+                        if product.category == product_category {
+                            return true
+                        }
+                    }
+                    else if product_category == nil && category != nil {
+                        if indicator.category_id == category!.id {
+                            return true
+                        }
+                    }
+                    else {
+                        return false
                     }
                 }
             }

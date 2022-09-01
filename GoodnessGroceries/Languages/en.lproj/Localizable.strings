@@ -1,703 +1,433 @@
-"AUTHENTICATION_REQUESTED_TEXT_1" = "Finalise your registration for this study by clicking on the link and following the three steps.";
+/* APPLICATION GENERAL */
 
-"AUTHENTICATION_REQUESTED_TEXT_2" = "Thank you for your interest in participating in the Goodness Groceries App and study!";
-
-
+"AUTHENTICATION_REQUESTED_TEXT_1" = "Thank you for your interest in participating in the Goodness Groceries App and study!";
+"AUTHENTICATION_REQUESTED_TEXT_2" = "Finalise your registration for this study by clicking on the link and following the two steps.";
 "AUTHENTICATION_REQUESTED_TITLE" = "Before you start";
-
-
-"AUTHENTICATION_REQUESTED_VALID_TEXT_1" = "We are validating your participation. You will receive a notification when it will be approuved.";
-
-"AUTHENTICATION_REQUESTED_VALID_TEXT_3" = "Thank you for your interest in participating in the Goodness Groceries App and study!";
-
-
-"AUTHENTICATION_REQUESTED_VALID_TITLE" = "Your participation is under review";
-
-"AUTHENTICATION_REQUESTED_WAIT_TEXT_1" = "We are analysing your buying habit in a first phase since";
-
-
-"AUTHENTICATION_REQUESTED_WAIT_TEXT_2" = "It is a required period to see if your buying habits change thanks to this application.";
-
-"AUTHENTICATION_REQUESTED_WAIT_TEXT_3" = "You will be able to use the application in";
-"AUTHENTICATION_REQUESTED_WAIT_TEXT_4" = "days.";
-
-
-"AUTHENTICATION_REQUESTED_WAIT_TITLE" = "Observation phase";
-
-
-/*  */
+"AUTHENTICATION_REQUESTED_VALID_TEXT_1" = "You will receive a notification when we have validated your informed consent form.";
+"AUTHENTICATION_REQUESTED_VALID_TEXT_3" = "If you missed a registration step, please click on the button below.";
+"AUTHENTICATION_REQUESTED_VALID_TITLE" = "We are validating your registration";
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_1" = "You are now participating in the study.";
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_2" = "Shop as normal using your Pall Center customer card for the next few weeks.";
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_3" = "You will be able to fully explore the four sustainability themes of the App in";
+"AUTHENTICATION_REQUESTED_WAIT_TEXT_4" = "days";
+"AUTHENTICATION_REQUESTED_WAIT_TITLE" = "Your registration has been approved";
 "BACK" = "Back";
 "MORE_PDF" = "More info";
 "READ_MORE" = "read more";
 "READ_LESS" = "read less";
-
 "CAMERA_NOT_ALLOWED" = "Goodness Groceries was not granted access to your camera to scan QR-codes. Please change that in settings. Thank you.";
-
-/*  */
 "CANCEL" = "Cancel";
-
-
 "CATEGORY" = "Category";
-
-
 "CLIENT_ID" = "Pall Center client ID";
-
-
 "COMPARE" = "Compare";
-
-
 "CONTINUE" = "Continue";
-
-
 "DONE" = "Done";
-
-
 "HELP" = "Help";
-
-
-"HELP_PAGE_BUTTON_1" = "Indicator definitions";
-
-
-"HELP_PAGE_BUTTON_2" = "Help";
-
-
-"HELP_PAGE_BUTTON_3" = "Contact us";
-
-/*  */
+"LINK_WEBSITE" = "Goodness Groceries website";
+"LINK_CONTACT_US" = "Contact us";
+"HELP_PAGE_BUTTON_0" = "Indicator definitions";
+"HELP_PAGE_BUTTON_1" = "Product category definitions";
+"HELP_PAGE_BUTTON_12" = "Symbols glossary";
+"HELP_PAGE_BUTTON_2" = "Goodness Groceries webpage";
+"HELP_PAGE_BUTTON_3" = "Help";
+"HELP_PAGE_BUTTON_4" = "Contact us";
+"HELP_ATTRIBUTED" = "The indicator is attributed to the product";
+"HELP_NOT_ATTRIBUTED" = "The indicator is not attributed to the product";
+"HELP_NOT_APPLICABLE" = "The indicator is not applicable to the product";
 "HOME" = "Home";
-
-
-"INDICATORS" = "Indicators";
-
-
-"IND_ANIMAL_DESCRIPTION" = "The physical and psychological well-being of animals is monitored so that they may live in their species-specific way and be healthy, comfortable, safe, well-nourished, and exist without fear or suffering. This includes housing, rearing, transport, feed, and slaughter.";
-
-
-"IND_ANIMAL_NAME" = "Animal welfare";
-
-
-"IND_ANIMAL_SUBIND_HUSBANDRYCONDITIONS_NAME" = "Husbandy Conditions";
-
-
-"IND_ANIMAL_SUBIND_SLAUGHTERINGCONDITIONS_NAME" = "Slaughtering Conditions";
-
-
-"IND_ANIMAL_SUBIND_TRANSPORTCONDITIONS_NAME" = "Transport Conditions";
-
-
-"IND_BIODIV_DESCRIPTION" = "Plants, animals and microorganisms in nature must exist in the greatest possible diversity, and have wide genetic variety within the various species to guarantee life in the long-term. In food production, the conservation and improvement of ecosystems is prioritised. Ancient varieties and breeds are reintroduced and the dominance of a limited number of varieties is avoided. The biodiversity of the surrounding natural landscape is conserved as much as possible.";
-
-
-"IND_BIODIV_NAME" = "Biodiversity";
-
-
-"IND_BIODIV_SUBIND_DIVERSITYOFPRODUCTION_COFFEE_IC_DESCRIPTION" = "Coffee is grown in agroforestry systems with other cash crops (like bananas) and self-sufficiency crops (like manioc).";
-
-
-"IND_BIODIV_SUBIND_DIVERSITYOFPRODUCTION_NAME" = "Diversity of Production";
-
-
-"IND_BIODIV_SUBIND_LANDCONSERVATIONANDREHABILITATION_COFFEE_IC_DESCRIPTION" = "There is no production in protected zones.";
-
-
-"IND_BIODIV_SUBIND_LANDCONSERVATIONANDREHABILITATION_NAME" = "Land Conservation and Rehabilitation";
-
-
-"IND_BIODIV_SUBIND_SAVINGOFSEEDSANDBREEDS_COFFEE_IC_DESCRIPTION" = "The production of different varieties is mandatory, plus at least one ancient variety.";
-
-
-"IND_BIODIV_SUBIND_SAVINGOFSEEDSANDBREEDS_NAME" = "Saving of Seeds and Breeds";
-
-
-"IND_CAT_ECONOMIC_DESCRIPTION" = "All workers in the food sector have present and future financial security. Society prospers through their food production activities, building both financial and social gains. More local, circular and solidarity-based food production is fostered.";
-
-
-"IND_CAT_ECONOMIC_NAME" = "Economic well-being";
-
-
-"IND_CAT_ENVIRONMENT_DESCRIPTION" = "Efforts are made, during the various phases of production, processing and consumption of food, to minimise negative impacts on nature and even create positive side effects. This makes our food system more ecologically sustainable.";
-
-
-"IND_CAT_ENVIRONMENT_NAME" = "Environment";
-
-
-"IND_CAT_GOVERNANCE_DESCRIPTION" = "The way companies conduct business, manage their resources and assets, and shape their decision-making aims at increasing sustainability. Product information is transparent and accessible. Companies use participatory approaches and can be held accountable for their claims.";
-
-
-"IND_CAT_GOVERNANCE_NAME" = "Good governance";
-
-
-"IND_CAT_SOCIAL_DESCRIPTION" = "Every human being is able to fulfil their basic human needs, and has the right and freedom to pursue their aspirations for a better life, without compromising the ability of others and of future generations to do the same.";
-
-
-"IND_CAT_SOCIAL_NAME" = "Social well-being";
-
-
-"IND_DECENT_DESCRIPTION" = "People gaining their living by producing food are empowered to build safe, decent and resilient standards of living by increasing their assets, capabilities and activities. Ideally, the quality of their lives, and their families’ lives, both current and future, can be improved.";
-
-
-"IND_DECENT_NAME" = "Decent Livelihoods";
-
-
-"IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_COFFEE_IC_DESCRIPTION" = "Training in farming, financial and literacy is offered to every producer.";
-
-
-"IND_DECENT_SUBIND_CAPACITYDEVELOPMENT_NAME" = "Capacity Development";
-
-
-"IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_COFFEE_IC_DESCRIPTION" = "Local authority agreements are encouraged to ensure that producers own their land. Farm equipment is supplied to producers.";
-
-
-"IND_DECENT_SUBIND_FAIRACCESSTOMEANSOFPRODUCTIONANDTOLAND_NAME" = "Fair Access to Means of Production and to Land";
-
-
-"IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_IC_DESCRIPTION" = "Clean, safe and decent accommodation is provided on-farm or near processing facilities. Children have free access to quality education.";
-
-
-"IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_IO_DESCRIPTION" = "Fairtrade® certification guidelines are followed to pursue better livelihoods for producers.";
-
-
-"IND_DECENT_SUBIND_QUALITYOFLIFE_COFFEE_LO_DESCRIPTION" = "Fairtrade® certification guidelines are followed to pursue better livelihoods for producers.";
-
-
-"IND_DECENT_SUBIND_QUALITYOFLIFE_NAME" = "Quality of Life";
-
-
-"IND_EQUITY_DESCRIPTION" = "All people working in the food system are treated equally and without discrimination, regardless of gender, ethnic origin, age, religion, potential disabilities etc. All people are given equal opportunity to enter into food production, and are not excluded for any discriminatory reasons.";
-
-
-"IND_EQUITY_NAME" = "Social equity";
-
-
-"IND_EQUITY_SUBIND_GENDEREQUALITY_COFFEE_IC_DESCRIPTION" = "Policies are in place for gender discrimination and women empowerment.";
-
-
-"IND_EQUITY_SUBIND_GENDEREQUALITY_NAME" = "Gender Equality";
-
-
-"IND_EQUITY_SUBIND_SUPPORTTOVULNERABLEPEOPLE_COFFEE_IC_DESCRIPTION" = "Special projects push the inclusion of young farmers and female-led households.";
-
-
-"IND_EQUITY_SUBIND_SUPPORTTOVULNERABLEPEOPLE_NAME" = "Support to Vulnerable People";
-
-
-"IND_FAIR_DESCRIPTION" = "Producers are fairly remunerated. They are paid a price that is stable, equitably negotiated and based on true costs, with long-term agreements that provide planning security. Producers are not forced – by any reason – to sell their products below value.  This applies especially, but not exclusively, to smallholders in marginal regions or those submitted to highly volatile world market prices.";
-
-
-"IND_FAIR_NAME" = "Fair trade practices";
-
-
-"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_IC_DESCRIPTION" = "UTZ™ and Rain Forest Alliance™ standards are followed to set price policies.";
-
-
-"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
-
-
-"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_COFFEE_LO_DESCRIPTION" = "Fairtrade® regulations support producers in gaining fair wages.";
-
-
-"IND_FAIR_SUBIND_FAIRPRICINGANDTRANSPARENTCONTRACTS_NAME" = "Fair Pricing and Transparent Contracts";
-
-
-"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_IC_DESCRIPTION" = "International agreements are applied to ensure producers’ freedom of association and right to bargaining.";
-
-
-"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
-
-
-"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_COFFEE_LO_DESCRIPTION" = "Fairtrade® regulations support producers in their right to freedom of association.";
-
-
-"IND_FAIR_SUBIND_FREEDOMOFASSOCIATIONANDRIGHTTOBARGAINING_NAME" = "Freedom of Association and Right to Bargaining";
-
-
-"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_IC_DESCRIPTION" = "Farm production systems are preferably based on local indigenous knowledge.";
-
-
-"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
-
-
-"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_COFFEE_LO_DESCRIPTION" = "Fairtrade® regulations protect the knowledge and property rights of indigenous communities.";
-
-
-"IND_FAIR_SUBIND_INDIGENOUSKNOWLEDGE_NAME" = "Indigenous Knowledge";
-
-
-"IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IC_DESCRIPTION" = "Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.";
-
-"IND_FAIR_SUBIND_WAGELEVEL_CHOCOSPREADS_LC_DESCRIPTION" = "Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining agreements.Producers obtain minimum national wage, or a higher wage agreed upon by collective bargaining .";
-
-
-"IND_FAIR_SUBIND_WAGELEVEL_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations and practices are followed.";
-
-
-"IND_FAIR_SUBIND_WAGELEVEL_NAME" = "Wage Level";
-
-
-"IND_FLORA_DESCRIPTION" = "Plant pests and diseases are managed and controlled through the use of more natural methods (enhancing beneficial biota, maximising beneficial insects, recycling nutrients, or minimising disturbance to soil). Livestock is protected against diseases, ideally without excessive use of antibiotics and other drugs (as they can cause resistances, contaminate waters and diminish natural microorganism presence).";
-
-
-"IND_FLORA_NAME" = "Health of Flora and Fauna";
-
-
-"IND_FLORA_SUBIND_ANIMALDRUGUSE_NAME" = "Animal Drug Use";
-
-
-"IND_FLORA_SUBIND_FURTHEREFFORTS_COFFEE_IC_DESCRIPTION" = "Wastewater is not discharged into aquatic ecosystems or drainage systems unless treated to remove toxins and reduce acidity.";
-
-
-"IND_FLORA_SUBIND_FURTHEREFFORTS_NAME" = "Further efforts";
-
-
-"IND_FLORA_SUBIND_PESTICIDES_COFFEE_IC_DESCRIPTION" = "Pesticides are reduced by using Integrated Pest Management and other agroecological cropping practices.";
-
-
-"IND_FLORA_SUBIND_PESTICIDES_COFFEE_IO_DESCRIPTION" = "Plant pests and diseases controlled by appropriated cropping techniques, pesticides reduced to minimum allowed by EU organic regulation.";
-
-
-"IND_FLORA_SUBIND_PESTICIDES_COFFEE_LO_DESCRIPTION" = "Plant pests and diseases controlled by using organic cropping techniques, pesticides reduced to the minimum allowed by EU organic regulation.";
-
-
-"IND_FLORA_SUBIND_PESTICIDES_NAME" = "Pesticides";
-
-
-"IND_FOOD_DESCRIPTION" = "The carbon footprint of a product’s transportation is measured by the distance between the places where food is produced and processed, and the place where it is eaten.";
-
-
-"IND_FOOD_NAME" = "Food miles";
-
-
-"IND_FOOD_SUBIND_INPUTPROVENANCE_NAME" = "Input provenance";
-
-
-"IND_FOOD_SUBIND_PRODUCTORIGIN_NAME" = "Product origin";
-
-
-"IND_FOOD_SUBIND_PRODUCTTRACKING_NAME" = "Product tracking";
-
-
-"IND_LABOUR_DESCRIPTION" = "Food producers are protected by international labour standards. They ensure transparent and legally-binding work contracts, protect from forced or child labour, and allow freedom of assembly and of bargaining. Food-system enterprises have to ensure these rights even in countries where international standards are difficult to control.";
-
-
-"IND_LABOUR_NAME" = "Labour rights";
-
-
-"IND_LABOUR_SUBIND_CHILDLABOUR_COFFEE_IC_DESCRIPTION" = "National laws are followed to avoid child labour.";
-
-
-"IND_LABOUR_SUBIND_CHILDLABOUR_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations are followed to avoid child labour.";
-
-
-"IND_LABOUR_SUBIND_CHILDLABOUR_NAME" = "Child Labour";
-
-
-"IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_COFFEE_IC_DESCRIPTION" = "Workers' rights and duties are written in employment contracts.";
-
-
-"IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_COFFEE_IO_DESCRIPTION" = "In addition to ILO Standards, Fairtrade® regulations are followed and written contracts assure producers’ rights.";
-
-
-"IND_LABOUR_SUBIND_EMPLOYMENTRELATIONS_NAME" = "Employment Relations";
-
-
-"IND_LABOUR_SUBIND_FORCEDLABOUR_COFFEE_IC_DESCRIPTION" = "Enterprise-unique, independently controlled policy to forbid all types of forced labour.";
-
-
-"IND_LABOUR_SUBIND_FORCEDLABOUR_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations are followed to avoid exploitation.";
-
-
-"IND_LABOUR_SUBIND_FORCEDLABOUR_NAME" = "Forced Labour";
-
-
-"IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_COFFEE_IC_DESCRIPTION" = "Quarterly meetings with farmer cooperatives review contracts according to producers’ realities, including compensations in case of natural disasters.";
-
-
-"IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_COFFEE_IO_DESCRIPTION" = "Fairtrade® regulations are followed to assure producers’ right to negotiate the terms of their employment.";
-
-
-"IND_LABOUR_SUBIND_RIGHTSOFNEGOTIATION_NAME" = "Rights of Negotiation";
-
-
-"IND_LOCALECO_DESCRIPTION" = "Producers and customers are brought closer together, by supporting local production and local markets. This can happen in classical economic circuits, but also in circular and solidarity economies where local needs, resources and capacities are prioritised, allowing for more equitable and sustainable markets, local development, and fair prices for both consumers and producers.";
-
-
-"IND_LOCALECO_NAME" = "Local economy";
-
-
-"IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_COFFEE_IC_DESCRIPTION" = "Credit to start small non-farm businesses and craft to multiplying household income sources is provided to producers.";
-
-
-"IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_COFFEE_LO_DESCRIPTION" = "By following EU organic and Fairtrade® regulations at the coffee production sites, Moulin Dieschbourg supports the local economy in Sidoma, Ethiopia.";
-
-
-"IND_LOCALECO_SUBIND_COMMUNITYINVESTMENT_NAME" = "Community Investment";
-
-
-"IND_LOCALECO_SUBIND_LOCALPROCUREMENT_COFFEE_IC_DESCRIPTION" = "Coffee processing facilities are built in the producer regions to broaden local procurement.";
-
-
-"IND_LOCALECO_SUBIND_LOCALPROCUREMENT_NAME" = "Local Procurement";
-
-
-"IND_LOCALECO_SUBIND_LOCALWORKFORCE_COFFEE_IC_DESCRIPTION" = "All employees in production, collecting, packaging and shipping processes are local people including supervision.";
-
-
-"IND_LOCALECO_SUBIND_LOCALWORKFORCE_COFFEE_LO_DESCRIPTION" = "The coffee is 100% roasted in Echternach (Label Made in Luxembourg), using local craftsmanship and employment, and supporting the Mellerdaler Regionalproduzenten.";
-
-
-"IND_LOCALECO_SUBIND_LOCALWORKFORCE_NAME" = "Local Workforce";
-
-
-"IND_PARTICIPATION_DESCRIPTION" = "All people taking part in food production are empowered to join decision-making, knowledge sharing, and partnership building alongside each other. More vulnerable, less powerful or otherwise disadvantaged stakeholders have real possibilities to actively participate and with an equal voice. Enterprises must identify all the people taking part in the production process and make efforts to overcome barriers that may hinder their participation. People who live on land where food is produced and processed have the possibility to prevent potential negative impacts on their environment or health.";
-
-
-"IND_PARTICIPATION_NAME" = "Participation";
-
-
-"IND_PARTICIPATION_SUBIND_CONFLICTRESOLUTION_COFFEE_IC_DESCRIPTION" = "Local anthropologists help identifying conflict addressing strategies.";
-
-
-"IND_PARTICIPATION_SUBIND_CONFLICTRESOLUTION_NAME" = "Conflict Resolution";
-
-
-"IND_PARTICIPATION_SUBIND_EFFECTIVEPARTICIPATION_COFFEE_IC_DESCRIPTION" = "Cooperation leaders are replaced yearly, via a democratic electoral system.";
-
-
-"IND_PARTICIPATION_SUBIND_EFFECTIVEPARTICIPATION_NAME" = "Effective Participation";
-
-
-"IND_PARTICIPATION_SUBIND_ENGAGEMENTBARRIERS_COFFEE_IC_DESCRIPTION" = "Producers are represented in cooperatives regardless of their social status in the community.";
-
-
-"IND_PARTICIPATION_SUBIND_ENGAGEMENTBARRIERS_NAME" = "Engagement Barriers";
-
-
-"IND_PARTICIPATION_SUBIND_STAKEHOLDERENGAGEMENT_COFFEE_IC_DESCRIPTION" = "The needs of all producers are heard and power consolidation by village leaders avoided when building producer cooperatives.";
-
-
-"IND_PARTICIPATION_SUBIND_STAKEHOLDERENGAGEMENT_NAME" = "Stakeholder Engagement";
-
-
-"IND_SOIL_DESCRIPTION" = "Actions are taken to prevent land and soil degradation, and specific practices are used to improve physical, chemical and biological soil properties (such as bulk density, heavy metal concentration or the amount of microorganisms).";
-
-
-"IND_SOIL_NAME" = "Soil Fertility";
-
-
-"IND_SOIL_SUBIND_LANDCONSERVATIONANDREHABILITATION_COFFEE_IC_DESCRIPTION" = "Previous mono-cropping land is reconverted into secondary forests or into agroforestry-based coffee production.";
-
-
-"IND_SOIL_SUBIND_LANDCONSERVATIONANDREHABILITATION_NAME" = "Land Conservation and Rehabilitation";
-
-
-"IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_COFFEE_IC_DESCRIPTION" = "Agroecological techniques based on indigenous knowledge are favoured and mineral fertilisers reduced to a minimum.";
-
-
-"IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_COFFEE_IO_DESCRIPTION" = "Fertilisers approved by EU organic regulation. Efforts made to use agroecological techniques and favour farmer-farmer and farmer-agronomist exchanges to find locally-adapted soil protection measures.";
-
-
-"IND_SOIL_SUBIND_SOILIMPROVEMENTPRACTICES_NAME" = "Soil Improvement Practices";
-
-
-"IND_SOVEREIGNITY_DESCRIPTION" = "Farmers are in control of their own economic and technical decisions. They are not dependent on limited crops or a narrow range of food products nor on external subsidies. To achieve producer sovereignty, farmers can build cooperatives to join their forces and interests and those of the communities they live in.";
-
-
-"IND_SOVEREIGNITY_NAME" = "Producer sovereignty";
-
-
-"IND_SOVEREIGNTY_SUBIND_COMMUNITYSUPPORTED_COFFEE_IC_DESCRIPTION" = "Farmer cooperatives represent the needs of the entire community.";
-
-
-"IND_SOVEREIGNTY_SUBIND_COMMUNITYSUPPORTED_NAME" = "Community-supported";
-
-
-"IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_COFFEE_IC_DESCRIPTION" = "Producers are organised in cooperatives and benefit from varied training, including financial management.";
-
-
-"IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_COFFEE_LO_DESCRIPTION" = "Fairtrade® certification guidelines support producer sovereignty, specifically by working with farmer cooperatives and the use of Fairtrade® guidelines for price policy.";
-
-
-"IND_SOVEREIGNTY_SUBIND_FARMERCOOPERATIVE_NAME" = "Farmer Cooperative";
-
-
-"IND_SOVEREIGNTY_SUBIND_PRODUCTDIVERSIFICATION_COFFEE_IC_DESCRIPTION" = "Producers are encouraged to reduce single crop dependency by combining coffee plants with banana trees and others, like manioc and maize.";
-
-
-"IND_SOVEREIGNTY_SUBIND_PRODUCTDIVERSIFICATION_NAME" = "Product Diversification";
-
-
-"IND_SUSTAINABLEMANAGEMENT_DESCRIPTION" = "All food actors engage in actions to improve the sustainability of their operations in the four sustainability categories (environment, economy, society and governance). Enterprises must have detailed action plans and are held accountable if they do not put these into practice. Independent bodies control the implementation and results of these action plans.";
-
-
-"IND_SUSTAINABLEMANAGEMENT_NAME" = "Sustainability management";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_CIVICRESPONSIBILITY_COFFEE_IC_DESCRIPTION" = "Douwe Egberts pushes stringent standards in coffee production, especially environmental and social.";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_CIVICRESPONSIBILITY_NAME" = "Civic Responsibility";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_DUEDILIGENCE_COFFEE_IC_DESCRIPTION" = "Douwe Egberts agrees to be held responsible by law for any claimed goals not met.";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_DUEDILIGENCE_NAME" = "Due Diligence";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_HOLISTICAUDITS_COFFEE_IC_DESCRIPTION" = "All claims are annually controlled by external, independent auditors.";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_HOLISTICAUDITS_NAME" = "Holistic Audits";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_SUSTAINABILITYMANAGEMENTPLAN_COFFEE_IC_DESCRIPTION" = "The Common Grounds strategy aims for 100% Responsibly Sourced Coffee by 2025.";
-
-
-"IND_SUSTAINABLEMANAGEMENT_SUBIND_SUSTAINABILITYMANAGEMENTPLAN_NAME" = "Sustainability Management Plan";
-
-
-"IND_TRANSPARENCY_DESCRIPTION" = "People within food production engage in trustful, open and respectful communication with each other, no matter their hierarchical status. Employees have access to procedures, policies, decisions and decision-making processes of their employers. Consumers can easily find verified publicly-accessible information about products.";
-
-
-"IND_TRANSPARENCY_NAME" = "Transparency";
-
-
-"IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_COFFEE_IC_DESCRIPTION" = "Fact-based documentaries of producers’ daily life are published bi-annually.";
-
-
-"IND_TRANSPARENCY_SUBIND_PRODUCTINFORMATION_NAME" = "Product Information";
-
-
-"IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_COFFEE_IC_DESCRIPTION" = "UTZ™ and Rain Forest Alliance™ country reports are published once a year.";
-
-
-"IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_COFFEE_LO_DESCRIPTION" = "Official controlling mechanisms of EU organic and international Fairtrade® regulations benefit customers indirectly by the transparency provided by these labels.";
-
-
-"IND_TRANSPARENCY_SUBIND_PUBLICCOMMUNICATION_NAME" = "Public Communication";
-
-
-"IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_COFFEE_IC_DESCRIPTION" = "Specification sheets are publicly available on a website.";
-
-
-"IND_TRANSPARENCY_SUBIND_SPECIFICATIONS_NAME" = "Specifications";
-
-
 "LANGUAGE" = "Language";
-
-
 "LANGUAGE_CHANGE_LATER" = "You can change the language in the settings later.";
-
-/*  */
 "LAST_STEP" = "Last step";
-
-
-"NOTIFICATIONS" = "Notifications";
-
-"NOTIFICATION_ACCOUNT_AUTHENTICATED_BODY" = "Your account has been validated, you take part of the studie! Thank you.";
-"NOTIFICATION_ACCOUNT_AUTHENTICATED_TITLE" = "Congratulations";
-
-"NOTIFICATION_ACCOUNT_ARCHIVED_BODY" = "Your account has been archived, you can uninstall the app.";
-"NOTIFICATION_ACCOUNT_ARCHIVED_TITLE" = "Account archived";
-
-
-"NOTIFICATION_REVIEW_PRODUCTS_BODY" = "Take our short survey.";
-"NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Client feedback";
-
-"NOTIFICATION_ACCOUNT_PHASE2_TITLE" = "Next Step";
-"NOTIFICATION_ACCOUNT_PHASE2_BODY" = "You are invited to use the application to do grocery shopping.";
-
 "NOT_APPLICABLE" = "not applicable";
-
-
 "NO_EVIDENCE" = "No evidence";
-
-
 "NO_PRODUCTS_FOUND" = "Sorry, no products found";
-
-
-"OPEN_FORM" = "Fill the form";
-
-"REOPEN_FORM" = "Go to the registration page";
-
+"OPEN_FORM" = "Let's go!";
+"REOPEN_FORM" = "Return to previous page";
 "OPEN_SETTINGS" = "Open settings";
-
-
 "OR" = "or";
-
-
 "PERMISSIONS_MODAL_CAMERA_DESCRIPTION" = "Goodness Groceries needs access to your camera to scan QR-codes.";
-
-
 "PERMISSIONS_MODAL_CAMERA_TITLE" = "Camera";
-
-
 "PERMISSIONS_MODAL_FOOTER" = "Permissions are necessary for all the features and functions to work properly. If not yet activated, you have to enable permissions in settings.";
-
-
 "PERMISSIONS_MODAL_HEADER" = "In order for you to use certain features of this app, you need to give permissions.";
-
-
 "PERMISSIONS_MODAL_TITLE" = "Permissions";
-
-
 "POPUP_GENERAL_ERROR_TEXT" = "An error has occurred. Please try again later.";
-
-
 "POPUP_NETWORK_ERROR_TEXT" = "Please check your internet connection and try again later.";
-
-
 "POPUP_NETWORK_ERROR_TITLE" = "Internet problem";
-
-/*  */
-"PRODUCT" = "Product";
-
-
-"PRODUCTS" = "Products";
-
-
-"PRODUCT_CATEGORIES" = "Categories";
-
-
-"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Imported conventional";
-"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL_DESC" = "'Imported products' have entirely been produced or processed outside of Luxembourg. They travel by air, sea or land to Luxembourgish wholesale and retail markets. The distance travelled is referred to as 'food miles'. 'Conventional products' are produced, distributed and marketed according to any other criteria than the ones of organic methods, following general standards laid out by EU and the producing country’s legislation. They may have additional criteria defined in specific programmes and labels.";
-
-"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Imported organic";
-"PRODUCT_CATEGORY_IMPORTED_ORGANIC_DESC" = "'Imported products' have entirely been produced or processed outside of Luxembourg. They travel by air, sea or land to Luxembourgish wholesale and retail markets. The distance travelled is referred to as 'food miles'. 'Organic products' are produced, distributed and marketed according to the criteria of public organic certification, and must comply at least with the legislation of the importing country defining the use of pesticides and fertilisers, animal welfare standards and considerations for biodiversity etc.  Some products may have voluntarily additional criteria defined by private organic certifications.";
-
-"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Local conventional";
-"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL_DESC" = "'Local products' are produced or processed in Luxembourg. They can be made from nationally produced ingredients, imported ones or from a mixture of both. 'Conventional products' are produced, distributed and marketed according to any other criteria than the ones of organic methods, following general standards laid out by EU and Luxembourgish legislation. They may have additional criteria defined in specific programmes and labels.";
-
-"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local organic";
-"PRODUCT_CATEGORY_LOCAL_ORGANIC_DESC" = "'Local products' are produced or processed in Luxembourg. They can be made from nationally produced ingredients, imported ones or from a mixture of both. 'Organic products' are produced, distributed and marketed according to the criteria of public organic certification, and must comply at least with EU organic legislation defining the use of pesticides and fertilisers, animal welfare standards and considerations for biodiversity etc.  Some products may have voluntarily additional criteria defined by private organic certifications.";
-
-
-"PRODUCT_COFFEE_IC_DESCRIPTION" = "Composition of Robusta and Arabica coffees with beans from Rainforest Alliance and UTZ Certified™ farms only.  Coffee does not contain any additives.";
-
-
-"PRODUCT_COFFEE_IC_NAME" = "Aroma Rood Ground Coffee, 250g";
-
-
-"PRODUCT_COFFEE_IO_DESCRIPTION" = "Bean coffee from Congo from organic farming and fair trade";
-
-
-"PRODUCT_COFFEE_IO_NAME" = "Kivu Bean coffee";
-
-
-"PRODUCT_COFFEE_LC_DESCRIPTION" = "Origin 100% Brazil Isidro Pereira, ground, 250g";
-
-
-"PRODUCT_COFFEE_LC_NAME" = "Roasted coffee 1936";
-
-
-"PRODUCT_COFFEE_LO_DESCRIPTION" = "100% organic and Fairtrade certified Arabica coffee from Ethiopia, grown in the Sidamo region in heights between 1400 and 2200 m, and roasted at the Moulin J.P. Dieschbourg in Echternach, Luxembourg.";
-
-
-"PRODUCT_COFFEE_LO_NAME" = "Sidamo Bio coffee";
-
-
-"PRODUCT_CHOCOSPREADS_LC_NAME" = "Hazelnut Spread - The Original";
-"PRODUCT_CHOCOSPREADS_LC_DESCRIPTION" = "Piedmont hazelnut spread, milk chocolate. A clever mix entirely homemade! A well-kept secret recipe for exceptional pleasure.";
-"TYPE_CHOCOSPREADS" = "Choco spreads";
-
-
-/*  */
 "PROFILE" = "Profile";
-
-/*  */
 "PROVIDER" = "Company";
-
-
 "REVIEW_PRODUCTS" = "Review products";
-
-/*  */
 "SCANNER" = "Scan";
-
-
 "SCAN_DIRECTLY" = "Scan your Pall Center customer card";
-
-/*  */
-"SEARCH" = "Search";
-
-
+"SEARCH" = "Search products";
 "SETTINGS" = "Settings";
-
-
 "SHOW_LESS" = "Show less";
-
-/*  */
 "SHOW_MORE" = "Show more";
-
-
 "SIMILAR_PRODUCTS" = "Similar products";
-
-
 "SURVEY_PAGE_TEXT" = "You recently bought the following product, which indicators led you to choose it?";
-
-
 "SURVEY_PAGE_TITLE" = "Client feedback";
-
-
 "THANK_YOU" = "Thank you!";
-
-
 "THANK_YOU_MESSAGE" = "Thank you for reviewing the product(s) you purchased. Your feedback allows the research team to understand your food choices and to find out how grocery shopping can be made more sustainable.";
-
-/*  */
-"TYPE" = "Type";
-
-
-"TYPE_COFFEE" = "Coffee";
-
-
 "WELCOME_PAGE_1_TEXT" = "This app will allow you to compare the ethical and eco-responsible characteristics of selected food products available in Pall Center whilst you shop.";
-
-
 "WELCOME_PAGE_1_TITLE" = "Welcome to Goodness Groceries!";
-
-
-"WELCOME_PAGE_3_TEXT" = "Continue to personalize your App experience";
-
-
+"WELCOME_PAGE_3_TEXT" = "Continue to personalise your App experience";
 "WELCOME_PAGE_3_TITLE" = "The four sustainability themes";
-
-
-"WELCOME_PAGE_4_TITLE" = "What is closest to your heart when grocery shopping? (up to 4)";
-
-
-"WELCOME_PAGE_5_TITLE" = "What types of products do you tend to buy? (up to 4)";
-
-
+"WELCOME_PAGE_4_TITLE" = "What is closest to your heart when grocery shopping? (choose up to 4)";
+"WELCOME_PAGE_5_TITLE" = "What categories of products do you tend to buy? (choose up to 4)";
 "WELCOME_PAGE_6_TEXT" = "Use your smartphone while you shop to scan the QR codes on a selection of products.";
-
-
 "WELCOME_PAGE_6_TITLE" = "Scan a product";
-
-
-"WELCOME_PAGE_7_TEXT" = "Each product will be presented with its relevant sustainability indicators. Read more about each indicator by clicking on them, and make your purchases based on the information available.";
-
-"WELCOME_PAGE_7_TEXT2" = "I have answer the 3 questions.";
-
-"WELCOME_PAGE_7_TITLE" = "See indicators that matter to you";
-
-
-"WELCOME_PAGE_NOTIFICATIONS_TEXT_1" = "Please authorise notifications from Goodness Groceries in order to be informed once your account will have been verified, and to receive feedback forms regarding products and the app.";
-
-
+"WELCOME_PAGE_7_TEXT" = "Each product is presented with its relevant sustainability indicators. Read more about each indicator by clicking on them, and make your purchases based on the information available.";
+"WELCOME_PAGE_7_TEXT2" = "I have completed the two registration steps.";
+"WELCOME_PAGE_7_TITLE" = "See the indicators that matter to you";
+"WELCOME_PAGE_NOTIFICATIONS_TEXT_1" = "Please authorise notifications from Goodness Groceries in order to be informed once your account will have been verified, and to receive feedback forms regarding products and the App.";
 "WELCOME_PAGE_NOTIFICATIONS_TEXT_2" = "Your feedback allows the research team to understand your food choices and to find out how grocery shopping can be made more sustainable. As this is a pilot app, we also need your feedback to improve the app in the future.";
-
-
 "WELCOME_PAGE_NOTIFICATIONS_TITLE" = "Notifications";
-
-
 "WRONG_FORMAT_ALERT_TEXT" = "The client ID must have exactly 13 digits!";
-
-
 "WRONG_FORMAT_ALERT_TITLE" = "Incorrect format";
-
-
 "en" = "English";
-
-
 "fr" = "Français";
 
+/* TYPE */
+
+"TYPE" = "Type";
+"TYPE_COFFEE" = "Coffee";
+"TYPE_HONEY" = "Honey";
+"TYPE_FLOUR" = "Flour";
+"TYPE_CHOCOSPREAD" = "Chocolate Spread";
+"TYPE_JAM" = "Jam";
+"TYPE_YOGURT" = "Yogurt";
+"TYPE_MILK" = "Milk";
+"TYPE_EGG" = "Eggs";
+"TYPE_PASTA" = "Pasta";
+"TYPE_POTATOES" = "Potatoes";
+"TYPE_APPLEJUICE" = "Apple Juice";
+"TYPE_HAM" = "Ham";
+
+/* PRODUCTS CATEGORIES */
+
+"PRODUCT" = "Product";
+"PRODUCTS" = "Products";
+"PRODUCT_CATEGORIES" = "Categories";
+"PRODUCT_CATEGORY_IMPORTED_CONVENTIONAL" = "Imported conventional";
+"PRODUCT_CATEGORY_IMPORTED_ORGANIC" = "Imported organic";
+"PRODUCT_CATEGORY_LOCAL_CONVENTIONAL" = "Local conventional";
+"PRODUCT_CATEGORY_LOCAL_ORGANIC" = "Local organic";
+"PRODUCT_CATEGORY_IMPORTED_DESC" = "'Imported products' have entirely been produced or processed outside of Luxembourg. They travel by air, sea or land to Luxembourg's wholesale and retail markets. The distance travelled is referred to as 'food miles'.";
+"PRODUCT_CATEGORY_CONVENTIONAL_DESC" = "'Conventional products' are produced, distributed and marketed according to any other criteria than the ones of organic methods, following general standards laid out by EU and the producing country’s legislation. They may have additional criteria defined in specific programmes and labels.";
+"PRODUCT_CATEGORY_LOCAL_DESC" = "'Local products' are produced or processed in Luxembourg. They can be made from nationally produced ingredients, imported ones or from a mixture of both.";
+"PRODUCT_CATEGORY_ORGANIC_DESC" = "'Organic products' are produced, distributed and marketed according to the criteria of public organic certification, and must comply at least with the legislation of the importing country defining the use of pesticides and fertilisers, animal welfare standards, considerations for biodiversity, etc. Some products may have voluntarily additional criteria defined by private organic certifications.";
+"ALL_CAT" = "All categories";
+"ALL_IND" = "All categories";
+/* NOTIFICATIONS */
+
+"NOTIFICATIONS" = "Notifications";
+"NOTIFICATION_ACCOUNT_AUTHENTICATED_BODY" = "Your account has been validated and you are now participating in the Goodness Groceries study.";
+"NOTIFICATION_ACCOUNT_AUTHENTICATED_TITLE" = "Congratulations!";
+"NOTIFICATION_ACCOUNT_ARCHIVED_BODY" = "Your account has been archived, you can uninstall the app.";
+"NOTIFICATION_ACCOUNT_ARCHIVED_TITLE" = "Account archived";
+"NOTIFICATION_ACCOUNT_DELETED_BODY" = "Your account has been deleted, you can uninstall the app.";
+"NOTIFICATION_ACCOUNT_DELETED_TITLE" = "Account deleted";
+"NOTIFICATION_REVIEW_PRODUCTS_BODY" = "Take our short survey.";
+"NOTIFICATION_REVIEW_PRODUCTS_TITLE" = "Product feedback";
+"NOTIFICATION_ACCOUNT_PHASE2_TITLE" = "Next Steps!";
+"NOTIFICATION_ACCOUNT_PHASE2_BODY" = "You can now use Goodness Groceries to scan items while you shop.";
+
+/* INDICATORS */
+
+"INDICATORS" = "Indicators";
+"IND_ANIMAL_NAME" = "Animal welfare";
+"IND_ANIMAL_DESCRIPTION" = "The physical and psychological well-being of animals is monitored so that they may live in their species-specific way and be healthy, comfortable, safe, well-nourished, and exist without fear or suffering. This includes housing, rearing, transport, feed, and slaughter.";
+"IND_BIODIV_NAME" = "Biodiversity";
+"IND_BIODIV_DESCRIPTION" = "Plants, animals and microorganisms in nature must exist in the greatest possible diversity, and have wide genetic variety within the various species to guarantee life in the long-term. In food production, the conservation and improvement of ecosystems is prioritised. Ancient varieties and breeds are reintroduced and the dominance of a limited number of varieties is avoided. The biodiversity of the surrounding natural landscape is conserved as much as possible.";
+"IND_CAT_ECONOMIC_NAME" = "Economic well-being";
+"IND_CAT_ECONOMIC_DESCRIPTION" = "All workers in the food sector have present and future financial security. Society prospers through their food production activities, building both financial and social gains. More local, circular and solidarity-based food production is fostered.";
+"IND_CAT_ENVIRONMENT_NAME" = "Environment";
+"IND_CAT_ENVIRONMENT_DESCRIPTION" = "Efforts are made, during the various phases of production, processing and consumption of food, to minimise negative impacts on nature and even create positive side effects. This makes our food system more ecologically sustainable.";
+"IND_CAT_GOVERNANCE_NAME" = "Good governance";
+"IND_CAT_GOVERNANCE_DESCRIPTION" = "The way companies conduct business, manage their resources and assets, and shape their decision-making aims at increasing sustainability. Product information is transparent and accessible. Companies use participatory approaches and can be held accountable for their claims.";
+"IND_CAT_SOCIAL_NAME" = "Social well-being";
+"IND_CAT_SOCIAL_DESCRIPTION" = "Every human being is able to fulfil their basic human needs, and has the right and freedom to pursue their aspirations for a better life, without compromising the ability of others and of future generations to do the same.";
+"IND_DECENT_NAME" = "Decent Livelihoods";
+"IND_DECENT_DESCRIPTION" = "People gaining their living by producing food are empowered to build safe, decent and resilient standards of living by increasing their assets, capabilities and activities. Ideally, the quality of their lives, and their families’ lives, both current and future, can be improved.";
+"IND_EQUITY_NAME" = "Social equity";
+"IND_EQUITY_DESCRIPTION" = "All people working in the food system are treated equally and without discrimination, regardless of gender, ethnic origin, age, religion, potential disabilities etc. All people are given equal opportunity to enter into food production, and are not excluded for any discriminatory reasons.";
+"IND_FAIR_NAME" = "Fair trade practices";
+"IND_FAIR_DESCRIPTION" = "Producers are fairly remunerated. They are paid a price that is stable, equitably negotiated and based on true costs, with long-term agreements that provide planning security. Producers are not forced – by any reason – to sell their products below value. This applies especially, but not exclusively, to smallholders in marginal regions or those submitted to highly volatile world market prices.";
+"IND_FLORA_NAME" = "Health of Flora and Fauna";
+"IND_FLORA_DESCRIPTION" = "Plant pests and diseases are managed and controlled through the use of more natural methods (enhancing beneficial biota, maximising beneficial insects, recycling nutrients, or minimising disturbance to soil). Livestock is protected against diseases, ideally without excessive use of antibiotics and other drugs (as they can cause resistances, contaminate waters and diminish natural microorganism presence).";
+"IND_FOOD_NAME" = "Food miles";
+"IND_FOOD_DESCRIPTION" = "The carbon footprint of a product’s transportation is measured by the distance between the places where food is produced and processed, and the place where it is eaten.";
+"IND_LABOUR_NAME" = "Labour rights";
+"IND_LABOUR_DESCRIPTION" = "Food producers are protected by international labour standards. They ensure transparent and legally-binding work contracts, protect from forced or child labour, and allow freedom of assembly and of bargaining. Food-system enterprises have to ensure these rights even in countries where international standards are difficult to control.";
+"IND_LOCALECO_NAME" = "Local economy";
+"IND_LOCALECO_DESCRIPTION" = "Producers and customers are brought closer together, by supporting local production and local markets. This can happen in classical economic circuits, but also in circular and solidarity economies where local needs, resources and capacities are prioritised, allowing for more equitable and sustainable markets, local development, and fair prices for both consumers and producers.";
+"IND_PARTICIPATION_NAME" = "Participation";
+"IND_PARTICIPATION_DESCRIPTION" = "All people taking part in food production are empowered to join decision-making, knowledge sharing, and partnership building alongside each other. More vulnerable, less powerful or otherwise disadvantaged stakeholders have real possibilities to actively participate and with an equal voice. Enterprises must identify all the people taking part in the production process and make efforts to overcome barriers that may hinder their participation. People who live on land where food is produced and processed have the possibility to prevent potential negative impacts on their environment or health.";
+"IND_SOIL_NAME" = "Soil Fertility";
+"IND_SOIL_DESCRIPTION" = "Actions are taken to prevent land and soil degradation, and specific practices are used to improve physical, chemical and biological soil properties (such as bulk density, heavy metal concentration or the amount of microorganisms).";
+"IND_SOVEREIGNITY_NAME" = "Producer sovereignty";
+"IND_SOVEREIGNITY_DESCRIPTION" = "Farmers are in control of their own economic and technical decisions. They are not dependent on limited crops or a narrow range of food products nor on external subsidies. To achieve producer sovereignty, farmers can build cooperatives to join their forces and interests and those of the communities they live in.";
+"IND_SUSTAINABLEMANAGEMENT_NAME" = "Sustainability management";
+"IND_SUSTAINABLEMANAGEMENT_DESCRIPTION" = "All food actors engage in actions to improve the sustainability of their operations in the four sustainability categories (environment, economy, society and governance). Enterprises must have detailed action plans and are held accountable if they do not put these into practice. Independent bodies control the implementation and results of these action plans.";
+"IND_TRANSPARENCY_NAME" = "Transparency";
+"IND_TRANSPARENCY_DESCRIPTION" = "People within food production engage in trustful, open and respectful communication with each other, no matter their hierarchical status. Employees have access to procedures, policies, decisions and decision-making processes of their employers. Consumers can easily find verified publicly-accessible information about products.";
+
+/* PRODUCTS */
+
+"PRODUCT_5453001556888_NAME" = "Meyer Dés de jambon cuit - Local conventional ham";
+"PRODUCT_5453001556888_DESCRIPTION" = "Cooked ham. The ham is received, boned, trimmed, brined and cooked at Boucherie-Salaisons Meyer's premises in Bascharage.";
+"IND_FOOD_5453001556888" = "The pork meat is purchased from Belgium and Luxembourg agriculture and is entirely processed into ham in Luxembourg (Bascharage). It is dispatched from Bascharage to national market and nearby Belgian border market.";
+"IND_LOCALECO_5453001556888" = "The pork meat is purchased from Belgium and Luxembourg agriculture and is entirely processed into ham in Luxembourg (Bascharage). It is dispatched from Bascharage to national market and nearby Belgian border market.";
+"IND_LABOUR_5453001556888" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARANCY_5453001556888" = "The enterprise provides product information, information about the company, about the ham production, as well as the meaning of the labels, etc. via their website. Contact data are easily accessible to the public.";
+
+"PRODUCT_2117_NAME" = "OBCO Lëtzebuerger Grompereren - Local organic potatoes";
+"PRODUCT_2117_DESCRIPTION" = "Local Organic Potatoes produced and sold in Luxembourg.";
+"IND_BIODIV_2117" = "EU organic regulations are followed for biodiversity criteria. Crop rotation is practiced on 100% of the cultivated area, as well as permanent soil cover. Cultivation of elder varieties as well as newer, adapted ones (disease resistant varieties).";
+"IND_FLORA_2117" = "EU organic regulations are followed for pest and disease management criteria. Additionally, the use of copper is reduced to a minimum.";
+"IND_SOIL_2117" = "EU organic regulations are followed for soil fertility criteria. Permanent soil cover, use of compost as a main fertiliser, cooperation with other farms to achieve the most closed nutrient cycle possible, use of leguminous plants in crop rotation.";
+"IND_SOVEREIGNTY_2117" = "EU organic regulations are followed to ensure product diversification to diversify risk and improve income opportunities for farmers.";
+"IND_FOOD_2117" = "All potatoes are produced in the North of Luxembourg and dispatched directly to retail from the farms.";
+"IND_LOCALECO_2117" = "All the potatoes are produced in the North of Luxembourg and directly dispatched to retail from the farms. Part of the potatoes are sold via direct marketing from producing farms to consumers.";
+"IND_LABOUR_2117" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_2117" = "Farm is open to visitors and clients year-round. Social media is used to communicate with consumers, and to share contact data and news about the potato production.";
+
+"PRODUCT_2999_NAME" = "Steffen-Majerus Lëtzebuerger Grompereren - Local conventional potatoes";
+"PRODUCT_2999_DESCRIPTION" = "Local conventional potatoes grown and sold in Luxembourg following the criteria of the labels “Produit du Terroir Lëtzebuerger Gromperen” and “Regionaalt Produkt Leader West”.";
+"IND_BIODIV_2999" = "Crop rotation on all the fields. Potatoes grown on small part of the fields only along with many other crops. Potato seeds are purchased from Luxembourg, the choice of varieties is based on their climate-suitability. Participation in habitat conservation and diversification programmes with extension of green belts, use of intermediate crops, use of winter crops, ecological set-aside, biotope enhancement measures), and extensification of grassland.";
+"IND_SOIL_2999" = "Use of soil analysis and fertilizer use is adapted based on the outcome of the analysis. Use of winter intermediary crops for nitrogen fixation and greening. Crop rotation to allow planting potatoes on same plots each 5 years only.";
+"IND_SOVEREIGNTY_2999" = "Use of crop diversity to diversify income opportunities and minimize risk. Participation in producer programmes (Produit du Terroir Lëtzebuerger Gromperen et Produit du Terroir, Lëtzebuerger Wees an Lëtzebuerger Spelz, Regionaalt Produkt Leader West).";
+"IND_FOOD_2999" = "All the potatoes are produced in the Centre of Luxembourg and dispatched directly to retail from the farm. Additionally, direct farm sale is available for private consumers.";
+"IND_LOCALECO_2999" = "Production by a local all-family labour farm with direct sales to consumers or to supermarkets.";
+"IND_LABOUR_2999" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_2999" = "The producers use social media for marketing, communicating product information as well as pedagogical aspects of the farm and farm tours. There are also product information sheets available on supermarket shelves. The enterprise can be contacted by phone, email, and through social media. Additionally, each product package has the producer’s personal contact details.";
+"IND_SUSTAINABLEMANAGEMENT_2999" = "Aspects in all 4 domains of sustainability are enhanced by the farm’s activities: Efforts in biodiversity, pedagogical farm offer, direct dialogue with consumers, transparent production (and according to the specification sheet “Produit du Terroir Letzebuerger Gromperen”).";
+
+"PRODUCT_5430000686037_NAME" = "Marque Nationale Lëtzebuerger Hunneg - Local organic honey";
+"PRODUCT_5430000686037_DESCRIPTION" = "Local organic honey produced in Luxembourg by a beekeeper cooperative, following the criteria of “Marque Nationale Miel” and EU organic criteria.";
+"IND_ANIMAL_5430000686037" = "Permanent availability of food sources is ensured for the bees. Bee colonies are protected against harmful weather conditions. Diseases are prevented through the regular renewal of the wax frames. Diseases are treated only when necessary and with a preference for natural treatments.";
+"IND_BIODIV_5430000686037" = "Apiculture contributes to saving endangered bee populations and increases the prevalence of pollinators in the ecosystem, which in turn improves the dissemination of a wide range of plants.";
+"IND_FLORA_5430000686037" = "Diseases are treated only when necessary and with a preference for natural treatments. Colony hygiene is supported with the regular renewal of the wax frames.";
+"IND_SOVEREIGNTY_5430000686037" = "The honey is produced by the agricultural association ‘Lëtzebuerger Hunneg’ (a producer’s association). The company diversifies products by producing four kinds of honey.";
+"IND_FOOD_5430000686037" = "The honey is produced entirely in Luxembourg (as prescribed in the specifications of the label “Lëtzebuerger Hunneg”). Honey producers supply directly to retailers and thus guarantee a direct (short) route from producer to distributor.";
+"IND_LOCALECO_5430000686037" = "The honey is produced entirely in Luxembourg (as prescribed in the specifications of the label “Lëtzebuerger Hunneg”).";
+"IND_DECENT_5430000686037" = "Organisation of beekeeping training for each member and potential member.";
+"IND_LABOUR_5430000686037" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_FAIR_5430000686037" = "The marketing of the product via the beekeepers' association guarantees a single price for all supplier members of the group. The association negotiates the selling price with the retailers.";
+"IND_TRANSPARENCY_5430000686037" = "The enterprise provides marketing information and information about the honey production and the beekeeper cooperative via their website. Individual contact details for beekepers are acessible. The EU organic label has indirect transparency benefits. The specifications of the label “Lëtzebuerger Hunneg” are available to the general public via the website, and include mainly quality criteria. The specifications are revised annually by the Board of Directors and approved by the General Assembly.";
+
+"PRODUCT_5453000683004_NAME" = "Ourdaller Hunneg - Local conventional honey";
+"PRODUCT_5453000683004_DESCRIPTION" = "Local conventional honey produced in the Our Natural Park in Luxembourg by a beekeeper cooperative, following the criteria of “Marque Nationale Miel”.";
+"IND_BIODIV_5453000683004" = "Apiculture contributes to saving endangered bee populations and increases the prevalence of pollinators in the ecosystem, which in turn improves the dissemination of a wide range of plants.";
+"IND_FLORA_5453000683004" = "No pesticide use during the flowering stage.";
+"IND_SOVEREIGNTY_5453000683004" = "The honey is produced by a cooperative that unites 28 Luxembourgish beekeepers. The company diversifies products by producing five kinds of honey. The aim is to diversify the range of products on offer while remaining within the logic of regional products.";
+"IND_FOOD_5453000683004" = "The honey is produced in the north of Luxembourg in the Our valley, and only sold within Luxembourg.";
+"IND_LOCALECO_5453000683004" = "The raw materials are all from the Our Valley region and the honey is produced entirely in Luxembourg by a beekeeper cooperative of 28 Luxembourgish beekeepers.";
+"IND_LABOUR_5453000683004" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_5453000683004" = "The company provides marketing and product information through their website as well as through their participation in trade and professional fairs.";
+
+"PRODUCT_4260333063103_NAME" = "Thiry Natur Joghurt D'fair Mëllech - Local conventional yoghurt";
+"PRODUCT_4260333063103_DESCRIPTION" = "Local conventional yoghurt produced by an on-farm dairy in Luxembourg. Label and certifications: D’fair Mëllech.";
+"IND_ANIMAL_4260333063103" = "Husbandry Conditions: dairy cows have stables corresponding to current norms (such as aeration) and meadow access from April to November.";
+"IND_BIODIV_4260333063103" = "Crop rotation (grass, maize, wheat, clover, lucerne) is practiced on the entire farmland, guaranteeing a minimum of agrobiodiversity.";
+"IND_SOIL_4260333063103" = "Crop rotation is practiced on the entire farmland and own manure from livestock and poultry is preferred to synthetic fertilisers. The farm takes part in a program called “Méi Weed” by IBLA/CONVIS with weekly tests of grass cuttings.";
+"IND_SOVEREIGNTY_4260333063103" = "Fair Mëllech is organised as farmer cooperative and provides economic advantages for each participating farmer. Besides natural yoghurt, the farm’s product palette includes chicken, milk, flavored yoghurt and ice creams from own dairy, as well as cream and butter from contract dairy, thus allowing for risk and income diversification.";
+"IND_FOOD_4260333063103" = "The yoghurt is produced in a local on-farm dairy from own milk mainly. The further ingredients (powdered milk and bacteria cultures) are imported from Germany due to lack of purchasing options from local suppliers.";
+"IND_LOCALECO_4260333063103" = "The yoghurt is produced in a local on-farm dairy. The supply includes national supermarkets, national maison-relais as well as on-farm direct sale, thus reinforcing local economy circles. Local workforce is employed when possible.";
+"IND_DECENT_4260333063103" = "Product with local and non-tropical ingredients produced by a local farm engaged in a farmer cooperative.";
+"IND_LABOUR_4260333063103" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_4260333063103" = "The farm has a webpage with marketing and product information. They can be contacted online, through social media and by phone. The farm regularly participates in events with their products. The farmer cooperative Fair Mëllech additionally ensures production criteria and communication with customers. Their specifications are accessible online.";
+"IND_PARTICIPATION_4260333063103" = "The farm engages in a farmer cooperative (Fair Mëllech).";
+
+"PRODUCT_5450252011296_NAME" = "BIOG Bio-Joghurt natur - Local organic yoghurt";
+"PRODUCT_5450252011296_DESCRIPTION" = "Local organic yoghurt made from local milk produced by the BIOG farming cooperative. The milk is processed into yoghurt at the BIOG dairy in Bascharage (LU). Ingrédients : Lait entier* pasteurisé, poudre de lait écrémé*, ferments lactiques (*organic). Product labels: Bio, Fair & Associative, Bio Lëtzebuerg.";
+"IND_ANIMAL_5450252011296" = "The well-being of the cows and calves is monitored throughout life to ensure healthy, comfortable, safe, and well-nourished lives, without fear or suffering. In addition to EU Organic Farming Regulations 2018/848, the milk producers comply with the Bio Lëtzebuerg specialist group of the Vereenegung fir Biolandwirtschaft Lëtzebuerg a.s.b.l. specifying further measures. All calves are reared on the mothers’ milk for a minimum of 72 hours, some longer. In addition, some of the 11 farms practice cow-bound calf rearing, meaning that the calves stay with their mother until they are max. 6 months old.";
+"IND_BIODIV_5450252011296" = "EU Organic regulation is followed for biodiversity criteria, as well as the specifications Bio LËTZEBUERG. Grazing allows the establishment of site-adapted plant species under natural grazing conditions. Additionally, some farms plant diverse hedgerows for cow grazing. No genetic engineering or use of genetically engineered seeds, breeds etc. Use of seed resistant varieties where possible.";
+"IND_FLORA_5450252011296" = "EU Organic regulations and Bio Lëtzebuerg regulations are followed. No pesticides are used. There is a reactive approach to the use of antibiotics and natural therapies are widespread to manage diseases gently at an early stage (phytotherapy, aromatherapy and homoeopathy).";
+"IND_SOIL_5450252011296" = "Soil fertility measures are based on EU organic regulations and additional Bio Lëtzebuerg specifications, e.g the use of crop rotation, sustainable grazing, multi-annual clover and/or alfalfa cultivation, and soil-based livestock farming to improve soil structure and natural fertility. Restricted use of approved fertilisers. Additional restrictions in water protection and Natura 2000 areas. Organic fertilising from cattle breeding and nitrogen fixation by leguminous crops.";
+"IND_SOVEREIGNTY_5450252011296" = "The BIOG cooperative, a network of regional producers, is part of the Oikopolis group, encompassing about 300 shareholders including farmers and local consumers. The entire milk used in the yoghurt comes from 11 dairy farms in the BIOG Cooperative. The BIOG members produce a diverse range of products including, milk and other dairy products, as well as vegetables, meat, eggs etc.";
+"IND_FOOD_5450252011296" = "The production and distribution of the yoghurt is done at the local level in Luxembourg: the milk is sourced from 11 organic BIOG farms in Luxembourg, the dairy is in Bascharage, and the final yoghurt product is dispatched from Munsbach. The entire flow of goods, from the production of milk to the sale of the yoghurt, is recorded in a management system.";
+"IND_LOCALECO_5450252011296" = "The BIOG dairy was created to locally process and market milk from Luxembourg's BIOG farmers and enable the production of regional organic dairy products that guarantee fair prices for all actors in the value chain. The Fair & Associative label (defined by internal specifications) aims at an associative economy whereby participants from the entire value chain meet to discuss problems and seek solutions together. The BIOG directives specify that if a Luxembourgish ingredient exists and is available then it must be privileged over imported alternatives. In the case of yoghurt, this product is 98% local. The definition of ‘local‘ is sourced from the Bio Lëtzebuerg and Made in Luxembourg labels.";
+"IND_DECENT_5450252011296" = "The enterprise offers both internal and external training for people involved in the fabrication of the product, as well as training opportunities for young people.";
+"IND_LABOUR_5450252011296" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_FAIR_5450252011296" = "The BIOG dairy was established to enable the production of regional organic dairy products and ensure fair prices for all actors in the value chain. Establishment and application of the internal ‘fair & associative’ charter aims at an associative economy whereby participants from the entire value chain meet to discuss problems, ensure fair conditions and seek solutions together.";
+"IND_TRANSPARENCY_5450252011296" = "The enterprise uses their webpage, social media, and their magazine, Oikopolis News, to communicate marketing and product information. They can be contacted online, by email and by phone. Specifications are publicly available and cover aspects of production and processing. These are reviewed every 2 years by the quality control department.";
+"IND_PARTICIPATION_5450252011296" = "As part of the internal ‘Fair & Associative’ charter, there is an annual meeting of all actors in the value chain, where people meet with the aim of discussing and solving problems. This includes milk producers, workers from the dairy, wholesalers (Biogros) and retail (Naturata). Additionally, there are opportunities for all stakeholders to acquire shares in the company.";
+"IND_SUSTAINABLEMANAGEMENT_5450252011296" = "As part of the Oikopolis Group, the company follows their participative governance approach, as well as their combined ecological-social-economic approach to sustainable production.";
+
+"PRODUCT_5400332304039_NAME" = "Knopes 1936 Grains - Local conventional coffee";
+"PRODUCT_5400332304039_DESCRIPTION" = "Coffee grain from beans grown in Brazil and roasted in Luxembourg. The date 1936 in the name of the coffee refers to the year in which the Knopes roastery was founded. The coffee “1936” is produced using a dry roasting method for quality texture and intensity. The roasted and packed coffee is directly transported from the Knopes roastery to sales points without storing. Ingredients: 100% Brazil Fazenda Sertao and the Bourbon red variety.";
+"IND_LOCALECO_5400332304039" = "Entirely roasted and packaged in the Knopes roastery in Luxembourg. Packaging designed by local enterprises and made from recyclable materials. The roasted and packed coffee is transported from the Knopes roastery to sales points without intermediate storing.";
+"IND_LABOUR_5400332304039" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_5400332304039" = "The company provides product information via website and social media. Details about the roastery, the roasting process, the provenance of the coffee, the packaging, as well as any news from the company are shared publicly on the website.";
+
+"PRODUCT_5407005661055_NAME" = "Genaveh Noisette à Tartiner l'Intense - Local conventional chocolate spread";
+"PRODUCT_5407005661055_DESCRIPTION" = "Dark chocolate and Piedmont IGP certified hazelnut spread produced in an atelier in Steinfort (LU). Product labels and certifications: Made in Luxembourg, Vegan. Ingredients: hazelnuts, milk chocolate 38% (sugar, cacao butter, whole milk powder, cocoa beans, soy lecithin), sugar, coconut oil, colza oil, butter, milk powder 0%.";
+"IND_LOCALECO_5407005661055" = "Ingredients are purchased from national suppliers where possible. Product is entirely made in Luxembourg. It carries the Label “Made in Luxembourg”.";
+"IND_EQUITY_5407005661055" = "The company tries to employ young workers and participates in projects that support to women, especially women that have suffered from physical violence.";
+"IND_LABOUR_5407005661055" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_5407005661055" = "The enterprise uses their webpage, newsletters social media to communicate marketing, company and product information. They can be contacted online, by email and by phone.";
+
+"PRODUCT_5420051401161_NAME" = "ETHIQUABLE Ecuador Grains - Imported organic coffee";
+"PRODUCT_5420051401161_DESCRIPTION" = "Imported organic coffee beans. The beans are grown in the Loja region of Ecuador. The roasting and packaging happens in France. Product labels and certifications: Organic, Symbole des Producteurs Paysans (SPP).";
+"IND_BIODIV_5420051401161" = "EU Organic regulation is followed for biodiversity criteria.";
+"IND_FLORA_5420051401161" = "EU Organic regulation is followed for pesticide use and pest and disease control. Locally appropriate organic cropping techniques are employed to help pest and disease control. Pesticides are reduced to the minimum allowed by regulations.";
+"IND_SOIL_5420051401161" = "EU organic regulations are followed for soil fertility criteria. Efforts are made to use agroecological techniques and favour exchanges between farmers and farmers and agronomists to find locally adapted soil protection measures.";
+"IND_SOVEREIGNTY_5420051401161" = "SPP certification guidelines are followed to ensure organisation, participation and ownership of small producers’ organisations.";
+"IND_DECENT_5420051401161" = "SPP certification guidelines are followed to pursue better livelihoods for small producers.";
+"IND_LABOUR_5420051401161" = "In addition to the International Labour Standards, SPP regulations assure the producers’ right to negotiate the terms of their employment, to avoid exploitation as well as child labour.";
+"IND_FAIR_5420051401161" = "SPP regulations support small producers in gaining fair wages, in their right to freedom of association and to protect the rights of indigenous communities and their knowledge and property rights.";
+"IND_TRANSPARENCY_5420051401161" = "The enterprise uses their webpage and social media for marketing and communicating product information. They can be contacted online, by phone, and on social media.";
+"IND_PARTICIPATION_5420051401161" = "SPP regulations support small producers in participating in decision making and in ownership of the label.";
+"IND_SUSTAINABLEMANAGEMENT_5420051401161" = "Aspects in all 4 domains of sustainability are enhanced: efforts in environmentally friendly production by following EU organic criteria, efforts in social and economic aspects by improving lives of small producers via the criteria of the SPP label, efforts in governance by allowing participative governance for small producers via the criteria of the SPP label.";
+
+"PRODUCT_5430000018968_NAME" = "Ramborn Apple Juice - Local conventional juice";
+"PRODUCT_5430000018968_DESCRIPTION" = "Local apple juice produced from a large variety of apples grown in orchards around Born (LU). Bottled in Labus-Eschbach. Produced following the criteria of the product label “Made in Luxembourg”, and the certification “B Corp Certification”.";
+"IND_BIODIV_5430000018968" = "Apple trees are only pruned every 5 years. Former farmland is converted into open wild orchards of 140 different local apple and pear species. Since 2021, Ramborn is participating in the EU FRAMEwork H2020 project by working on improving pollinator biodiversity.";
+"IND_FLORA_5430000018968" = "No pesticides are used for maintaining the trees nor on the apples.";
+"IND_SOIL_5430000018968" = "The apples grow in wild orchards, managed by occasional cow grazing exclusively. Natural cow dung left by the grazing herds helps to build and rebuild soil fertility on former farmland.";
+"IND_FOOD_5430000018968" = "All primary ingredients are produced and processed in Luxembourg and the Mëllerdall region. 5% of the apples grow in Ramborn’s own orchards, 95% of the apples are purchased from apple producers that manage their orchards to the same standards as Ramborn. The bottling of the juice is done in Germany.";
+"IND_LOCALECO_5430000018968" = "National suppliers produce the vast majority of the inputs needed to produce the juice. Local and regional suppliers are favoured whenever possible. Empty bottles are recollected in the supermarkets and restaurants and washed for reuse in the Moselle valley nearby Luxembourg. The apple juice is bottled in Germany.";
+"IND_LABOUR_5430000018968" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_5430000018968" = "The enterprise uses their webpage and social media to communicate marketing information, as well as information about the product production and about the labels. They can be contacted online, by email and by phone. Consumers can also visit the farm throughout the year for tours and for free on specific harvest days.";
+
+"PRODUCT_5430000732116_NAME" = "Dudel-Magie Spirelli Pasta - Local organic pasta";
+"PRODUCT_5430000732116_DESCRIPTION" = "Local organic pasta made with Bio-Ovo eggs from Buschdorf (LU) and with organic spelt flour sourced from the Dudel-Magie farm in Luxembourg and a supplier in Germany. The flour and eggs are processed into pasta at Dudel-Magie in Sprinkange (LU). Product labels and certificates: Made in Luxembourg, Bio.";
+"IND_ANIMAL_5430000732116" = "Eggs used for the pasta production stem from Bio-Ovo. Throughout the rearing process, the well-being of the chickens is monitored to ensure healthy, comfortable, safe and well-nourished lives, without fear or suffering, following EU Organic regulations. In addition, the Bio-Ovo specifications adopt more rigorous criteria regarding maximum animal density per m2 in indoor and outdoor spaces and outlines further conditions such as exercise spaces, outdoor spaces, and mobility. The chickens are fed with 100% organic feed.";
+"IND_BIODIV_5430000732116" = "Both flour and eggs are made following all EU Organic regulations concerning all elements linked to biodiversity.";
+"IND_FLORA_5430000732116" = "For both flour and eggs EU Organic regulations are applied. No pesticides or synthetic chemicals are used on the farms. For the chickens, there is a reactive approach to antibiotics and alternative treatments are always prioritised.";
+"IND_SOIL_5430000732116" = "For both flour and eggs EU Organic regulations are followed for soil fertility criteria, for example by practicing crop rotation with legumes, other green plants, and fallow periods.";
+"IND_SOVEREIGNTY_5430000732116" = "Bio-Ovo and Dudel-Magie are both part of the Oikopolis Group, whose shareholders include local farmers and consumers. Both Dudel-Magie and Bio-Ovo produce a range of products which allows for income diversification instead of dependency from single products. Dudel Magie have a shop on the farm allowing them to set their own prices and distribute some products without intermediaries.";
+"IND_FOOD_5430000732116" = "The flour is produced within Luxembourg and Germany. The eggs are produced in a range of 100km of Luxembourg. The processing of the eggs and flour into pasta takes place in Sprinkange at Dudel-Magie.";
+"IND_LOCALECO_5430000732116" = "Dudel-Magie source and process their ingredients in Luxembourg and Germany. 11 of the 15 egg farms are in Luxembourg, the remaining 4 farms are in the Greater Region (maximum 100km perimeter). Bio-Ovo is composed of a group of organic regional producers who collaborate on marketing and problem solving at different stages of the value chain. They have prioritised hiring local employees, even when other candidates have had similar skills, profile and conditions. Dudel-Magie have their own manufacture in Sprinkage where they produce the pasta according to artisanal methods.";
+"IND_LABOUR_5430000732116" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_5430000732116" = "The enterprise has a webpage with marketing and product information. They can be contacted online, through social media and by phone. The EU organic label has indirect transparency benefits. Additionally, consumers can visit the farm, either to tour the space, or to visit the farm shop.";
+
+"PRODUCT_5450086199535_NAME" = "Le Moulin Complète Bio - Local organic flour";
+"PRODUCT_5450086199535_DESCRIPTION" = "Local organic wheat flour produced in Luxembourg or the Greater Region, following the criteria of the EU organic label.";
+"IND_BIODIV_5450086199535" = "EU Organic regulation is followed for biodiversity criteria.";
+"IND_FLORA_5450086199535" = "EU Organic regulation is followed for pesticide use.  No use of storage insecticides.";
+"IND_SOIL_5450086199535" = "EU Organic regulation is followed for soil fertility practices.";
+"IND_SOVEREIGNTY_5450086199535" = "The wheat for the flour is sourced partially from farmer cooperatives in Luxembourg. A binding contract guarantees a specific price to participating local farmers.";
+"IND_FOOD_5450086199535" = "The primary ingredients are sourced from Luxembourg and the Greater Region. The final product is manufactured in Luxembourg and dispatched from Luxembourg. Primary ingredient (wheat) provenance is controlled by label owner.";
+"IND_LOCALECO_5450086199535" = "The primary ingredients are sourced from Luxembourg. The final product is manufactured in Luxembourg and dispatched from Luxembourg.";
+"IND_EQUITY_5450086199535" = "When choosing employees, the company ensures that it does not discriminate in terms of gender, nationality, cultural identity or disability.";
+"IND_LABOUR_5450086199535" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining. Respect of trade union rights (including internal trade union delegation). Quality policy include non-discrimination clauses, and a supplier code of conduct.";
+"IND_TRANSPARENCY_5450086199535" = "The organic certification body is the guarantor of compliance with the application of EU regulations on organic farming.Information is provided to customers via website and social media.";
+"IND_SUSTAINABLEMANAGEMENT_5450086199535" = "Moulins de Kleinbettingen is certified as corporate social responsibility (CSR) by the Institut National pour le Développement durable et la Responsabilité sociale des entreprises RSE certified company Responsabilité sociale des entreprises.";
+
+"PRODUCT_5450086125428_NAME" = "Le Moulin Gastronomie - Local conventional flour";
+"PRODUCT_5450086125428_DESCRIPTION" = "Local conventional wheat flour produced in Luxembourg, following the criteria of the label “Produit du terroir”.";
+"IND_BIODIV_" = "The label Produit du Terroir ensures commitment to biodiversity, e.g. lark windows or flower bands. Only certified bakery quality seeds are used.";
+"IND_FLORA_" = "No use of storage insecticides.";
+"IND_SOIL_" = "Prohibition of spreading sewage sludge, limitation of nitrogen use, crop rotation.";
+"IND_SOVEREIGNTY_" = "The wheat for the flour is sourced from farmers in Luxembourg. A binding contract guarantees a specific price to participating local farmers (bound to the Produit du Terroir label).";
+"IND_FOOD_" = "The primary ingredients are sourced from Luxembourg. The final product is manufactured in Luxembourg and dispatched from Luxembourg. Primary ingredient (wheat) provenance is controlled by label owner.";
+"IND_LOCALECO_" = "The primary ingredients are sourced from Luxembourg. The final product is manufactured in Luxembourg and dispatched from Luxembourg. The specifications guarantee a fair price to each actor of the flour value chain, from wheat producer to flour manufacturer to flour processors. The company is part of this label scheme for over 20 years.";
+"IND_EQUITY_" = "When choosing employees, the company ensures that it does not discriminate in terms of gender, nationality, cultural identity or disability.";
+"IND_LABOUR_" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining. Respect of trade union rights (including internal trade union delegation). Quality policy include non-discrimination clauses, and a supplier code of conduct.";
+"IND_FAIR_" = "A binding contract guarantees a specific price to participating local farmers (bound to the Produit du Terroir label).";
+"IND_TRANSPARENCY_" = "The company is a member of Produit du Terroir for the last 20 years. The Chamber of Agriculture guarantees that the specifications are met via annual controlling. Specification sheets are revised annually (after each harvest) together by all actors of the supply chain. Information is provided to customers via website and social media.";
+"IND_SUSTAINABLEMANAGEMENT_" = "Moulins de Kleinbettingen is certified as corporate social responsibility (CSR) by the Institut National pour le Développement durable et la Responsabilité sociale des entreprises RSE certified company Responsabilité sociale des entreprises.";
+
+"PRODUCT_5450086400044_NAME" = "Le Moulin Penne - Local conventional pasta";
+"PRODUCT_5450086400044_DESCRIPTION" = "Local conventional pasta produced from wheat flour produced in Luxembourg following the criteria of the label “Produit du terroir”.";
+"IND_BIODIV_5450086400044" = "The label Produit du Terroir ensures commitment to biodiversity, e.g., lark windows or flower bands. Only certified bakery quality seeds are used.";
+"IND_FLORA_5450086400044" = "No use of storage insecticides.";
+"IND_SOIL_5450086400044" = "Prohibition of spreading sewage sludge, limitation of nitrogen use, crop rotation.";
+"IND_SOVEREIGNTY_5450086400044" = "The wheat for the semolina is sourced from farmers in Luxembourg. A binding contract guarantees a specific price to participating local farmers (bound to the Produit du Terroir label).";
+"IND_FOOD_5450086400044" = "The primary ingredients are sourced from Luxembourg. The final product is manufactured in the Greater Region and dispatched from Luxembourg. Primary ingredient (wheat) provenance is controlled by label owner.";
+"IND_LOCALECO_5450086400044" = "The primary ingredients are sourced from Luxembourg. The final product is manufactured in the Greater Region and dispatched from Luxembourg. The specifications guarantee a fair price to each actor of the semolina value chain, from wheat producer to flour manufacturer to flour processors. The company is part of this label scheme for over 20 years.";
+"IND_EQUITY_5450086400044" = "When choosing employees, the company ensures that it does not discriminate in terms of gender, nationality, cultural identity or disability.";
+"IND_LABOUR_5450086400044" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining. Respect of trade union rights (including internal trade union delegation). Quality policy include non-discrimination clauses, and a supplier code of conduct.";
+"IND_FAIR_5450086400044" = "A binding contract guarantees a specific price to participating local farmers (bound to the Produit du Terroir label).";
+"IND_TRANSPARENCY_5450086400044" = "The company is a member of Produit du Terroir for the last 20 years. The Chamber of Agriculture guarantees that the specifications are met via annual controlling. Specification sheets are revised annually (after each harvest) together by all actors of the supply chain. Information is provided to customers via website and social media.";
+"IND_SUSTAINABLEMANAGEMENT_5450086400044" = "Moulins de Kleinbettingen is certified as corporate social responsibility (CSR) by the Institut National pour le Développement durable et la Responsabilité sociale des entreprises RSE certified company Responsabilité sociale des entreprises";
+
+"PRODUCT_5450250009240_NAME" = "BIOG Frësch Bio-Äer - Local organic eggs";
+"PRODUCT_5450250009240_DESCRIPTION" = "Local organic eggs from 15 farms within a 100 km perimeter and sold only in Luxembourg.";
+"IND_ANIMAL_5450250009240" = "Throughout the rearing process, the well-being of the chickens is monitored to ensure healthy, comfortable, safe and well-nourished lives, without fear or suffering, following EU Organic regulations. In addition, the Bio-Ovo specifications adopt more rigorous criteria regarding maximum animal density per m2 in indoor and outdoor spaces and outlines further conditions such as exercise spaces, outdoor spaces, and mobility. The birds are fed with 100% organic feed.";
+"IND_BIODIV_5450250009240" = "The enterprise follows EU Organic regulations concerning all elements linked to biodiversity. In addition, the majority of the 15 Bio-Ovo farmers carry out other farming activities alongside egg production (e.g., chicken rearing, cattle rearing, vegetable or cereal cultivation), and grow all or part of the feed themselves, thus avoiding monoculture.";
+"IND_FLORA_5450250009240" = "EU Organic regulations are applied. No pesticides or synthetic chemicals are used. Fruit trees and poplars serve as protection against birds of prey. A reactive approach to antibiotics is followed and alternative treatments are always prioritised. To encourage good animal health, they are provided with exercise facilities, winter gardens, perches and natural light sources. The maximum number of animals per square meter is lower than that of the EU organic regulations, which further reduces the risk of stress and injury.";
+"IND_SOIL_5450250009240" = "EU Organic regulations are followed. Most farmers grow all or part of the feed for the chickens themselves. They do so while practicing crop rotation with legumes, other green plants and fallow periods. This allows nitrogen fixation in the soil and formation of humus. Other soil improvement practices include improving water transport and retention.";
+"IND_SOVEREIGNTY_5450250009240" = "The farmers produce a range of products and are therefore not dependent on limited products nor on subsidies. Bio-Ovo is part of the Oikopolis Group, whose shareholders include local farmers and consumers. All Bio-Ovo egg producers are shareholders of the Bio-Ovo S.A. The farmers’ participation in the public limited company enables them to work towards common goals, set up joint marketing channels, and different distribution channels. The farmers are also encouraged to practice on-farm marketing.";
+"IND_FOOD_5450250009240" = "All 15 farms are located in Luxembourg or the Greater Region (in Belgium and the nearest region of Germany) (max. 100km perimeter). Packaging takes place in Buschdorf (LU) and dispatching from wholesale to retail in Munsbach (LU). All transport from farm to consumer takes place within 100 km.";
+"IND_LOCALECO_5450250009240" = "11 of the 15 farms are in Luxembourg, the remaining 4 farms are in the Greater Region (maximum 100km perimeter). Bio-Ovo focuses on strengthening the regional economy rather than only the Luxembourgish economy. The enterprise is composed of a group of organic regional producers who collaborate on marketing and problem solving at different stages of the value chain. The enterprise has prioritised hiring local employees, even when other candidates have had similar skills, profile and conditions.";
+"IND_EQUITY_5450250009240" = "One of the Bio-Ovo farms hosts a pedagogical project where young people with disabilities look after 1,600 organic free-range hens for therapeutic benefits through contact with animals.";
+"IND_LABOUR_5450250009240" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining. Employees have staff representatives and a council to represent their rights and needs. Bio-Ovo encourages community building and exchange through regular discussions with staff.";
+"IND_FAIR_5450250009240" = "Producers receive fair remuneration. This is achieved through discussion with the producers, and their roles in the Bio-Ovo S.A. public limited company, which enables them to work towards marketing and distribution goals together.";
+"IND_TRANSPARENCY_5450250009240" = "The enterprise has a webpage with marketing and product information. They can be contacted online, through social media and by phone. The EU organic label has indirect transparency benefits. Bio-Ovo product specifications are publicly accessible and are revised at least once a year by producers. In addition, each egg package has a batch number to guarantee traceability. Quality control is monitored by a certified external company (LUXQM), e.g., document control, product quality, and the traceability of each batch-by-batch number.";
+"IND_PARTICIPATION_5450250009240" = "Bio-Ovo is part of the Oikopolis Group, whose shareholders include local farmers and consumers. All Bio-Ovo egg producers are shareholders of the public limited company Bio-Ovo S.A. which enables them to collaborate on conflict resolution and problem solving. The small number of producers allows for more direct exchange through regular meetings and a space for suggestion and criticism.";
+"IND_SUSTAINABLEMANAGEMENT_5450250009240" = "As part of the Oikopolis Group, the company follows their participative governance approach, as well as their combined ecological-social-economic approach to sustainable production.";
+
+"PRODUCT_5450252000016_NAME" = "BIOG Frësch Bio-Mëllech 1,5% - Local organic milk";
+"PRODUCT_5450252000016_DESCRIPTION" = "Local organic milk produced fully in Luxembourg by a regional farming cooperative, and pasteurised at the BIOG dairy in Bascharage (LU).";
+"IND_ANIMAL_5450252000016" = "The well-being of the cows and calves is monitored throughout life to ensure healthy, comfortable, safe, and well-nourished lives, without fear or suffering. In addition to EU Organic Farming Regulations 2018/848, the milk producers comply with the Bio Lëtzebuerg specialist group of the Vereenegung fir Biolandwirtschaft Lëtzebuerg a.s.b.l. specifying further measures. All calves are reared on the mothers’ milk for a minimum of 72 hours, some longer. In addition, some of the 11 farms practice cow-bound calf rearing, meaning that the calves stay with their mother until they are max. 6 months old.";
+"IND_BIODIV_5450252000016" = "EU Organic regulation is followed for biodiversity criteria, as well as the specifications Bio LËTZEBUERG. Grazing allows the establishment of site-adapted plant species under natural grazing conditions. Additionally, some farms plant diverse hedgerows for cow grazing. No genetic engineering or use of genetically engineered seeds, breeds etc. Use of seed resistant varieties where possible.";
+"IND_FLORA_5450252000016" = "EU Organic regulations and Bio Lëtzebuerg regulations are followed. No pesticides are used. There is a reactive approach to the use of antibiotics and natural therapies are widespread to manage diseases gently at an early stage (phytotherapy, aromatherapy and homoeopathy).";
+"IND_SOIL_5450252000016" = "Soil fertility measures are based on EU organic regulations and additional Bio Lëtzebuerg specifications, e.g the use of crop rotation, sustainable grazing, multi-annual clover and/or alfalfa cultivation, and soil-based livestock farming to improve soil structure and natural fertility. Restricted use of approved fertilisers. Additional restrictions in water protection and Natura 2000 areas. Organic fertilising from cattle breeding and nitrogen fixation by leguminous crops.";
+"IND_SOVEREIGNTY_5450252000016" = "The BIOG cooperative, a network of regional producers, is part of the Oikopolis group, encompassing about 300 shareholders, including farmers and local consumers. The entire milk comes from 11 dairy farms in the BIOG Cooperative. BIOG members produce a diverse range of products including milk and other dairy products, as well as vegetables, meat, eggs etc.";
+"IND_FOOD_5450252000016" = "The entire production and distribution of the milk is done in Luxembourg: the milk is sourced from 11 organic BIOG farms in Luxembourg, the dairy is in Bascharage, and the final product is dispatched from Munsbach. The entire flow of goods, from the production of milk to the sale of the product, is recorded in a management system.";
+"IND_LOCALECO_5450252000016" = "The BIOG dairy was created to locally process and market milk from BIOG farmers (LU) and enable the production of regional organic dairy products that guarantee fair prices for all actors in the value chain. The Fair & Associative label (defined by internal specifications) aims at an associative economy and participative problem-solving and decision-making. The BIOG directives privileges local ingredients (LU) over imported options. The definition of ‘local‘ is sourced from the Bio Lëtzebuerg and Made in Luxembourg labels.";
+"IND_DECENT_5450252000016" = "The enterprise offers both internal and external training for people involved in the fabrication of the product, as well as training opportunities for young people.";
+"IND_LABOUR_5450252000016" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_FAIR_5450252000016" = "The BIOG dairy was established to enable the production of regional organic dairy products and ensure fair prices for all actors in the value chain. Establishment and application of the internal ‘fair & associative’ charter aims at an associative economy whereby participants from the entire value chain meet to discuss problems, ensure fair conditions and seek solutions together.";
+"IND_TRANSPARENCY_5450252000016" = "The enterprise uses their webpage, social media, and their magazine, Oikopolis News, to communicate marketing and product information. They can be contacted online, by email and by phone. Specifications are publicly available and cover aspects of production and processing. These are reviewed every 2 years by the quality control department.";
+"IND_PARTICIPATION_5450252000016" = "As part of the internal ‘Fair & Associative’ charter, there is an annual meeting of all actors in the value chain, with the aim of discussion and problem-solving. This includes milk producers, workers from the dairy, wholesalers (Biogros) and retail (Naturata). Additionally, there are opportunities for all stakeholders to acquire shares in the company.";
+"IND_SUSTAINABLEMANAGEMENT_5450252000016" = "As part of the Oikopolis Group, the company follows their participative governance approach, as well as their combined ecological-social-economic approach to sustainable production.";
+
+"PRODUCT_5450252000078_NAME" = "BIOG Frësch Bio-Vollmëllech 3,8% - Local organic milk";
+"PRODUCT_5450252000078_DESCRIPTION" = "Local organic milk produced fully in Luxembourg by a regional farming cooperative, and pasteurised at the BIOG dairy in Bascharage (LU).";
+"IND_ANIMAL_5450252000078" = "The well-being of the cows and calves is monitored throughout life to ensure healthy, comfortable, safe, and well-nourished lives, without fear or suffering. In addition to EU Organic Farming Regulations 2018/848, the milk producers comply with the Bio Lëtzebuerg specialist group of the Vereenegung fir Biolandwirtschaft Lëtzebuerg a.s.b.l. specifying further measures. All calves are reared on the mothers’ milk for a minimum of 72 hours, some longer. In addition, some of the 11 farms practice cow-bound calf rearing, meaning that the calves stay with their mother until they are max. 6 months old.";
+"IND_BIODIV_5450252000078" = "EU Organic regulation is followed for biodiversity criteria, as well as the specifications Bio LËTZEBUERG. Grazing allows the establishment of site-adapted plant species under natural grazing conditions. Additionally, some farms plant diverse hedgerows for cow grazing. No genetic engineering or use of genetically engineered seeds, breeds etc. Use of seed resistant varieties where possible.";
+"IND_FLORA_5450252000078" = "EU Organic regulations and Bio Lëtzebuerg regulations are followed. No pesticides are used. There is a reactive approach to the use of antibiotics and natural therapies are widespread to manage diseases gently at an early stage (phytotherapy, aromatherapy and homoeopathy).";
+"IND_SOIL_5450252000078" = "Soil fertility measures are based on EU organic regulations and additional Bio Lëtzebuerg specifications, e.g the use of crop rotation, sustainable grazing, multi-annual clover and/or alfalfa cultivation, and soil-based livestock farming to improve soil structure and natural fertility. Restricted use of approved fertilisers. Additional restrictions in water protection and Natura 2000 areas. Organic fertilising from cattle breeding and nitrogen fixation by leguminous crops.";
+"IND_SOVEREIGNTY_5450252000078" = "The BIOG cooperative, a network of regional producers, is part of the Oikopolis group, encompassing about 300 shareholders including farmers and local consumers. The entire milk comes from 11 dairy farms in the BIOG Cooperative. BIOG members produce a diverse range of products including milk and other dairy products, as well as vegetables, meat, eggs etc.";
+"IND_FOOD_5450252000078" = "The entire production and distribution of the milk is done in Luxembourg: the milk is sourced from 11 organic BIOG farms in Luxembourg, the dairy is in Bascharage, and the final product is dispatched from Munsbach. The entire flow of goods, from the production of milk to the sale of the product, is recorded in a management system.";
+"IND_LOCALECO_5450252000078" = "The BIOG dairy was created to locally process and market milk from BIOG farmers (LU) and enable the production of regional organic dairy products that guarantee fair prices for all actors in the value chain. The Fair & Associative label (defined by internal specifications) aims at an associative economy and participative problem-solving and decision-making. The BIOG directives privileges local ingredients (LU) over imported options. The definition of ‘local‘ is sourced from the Bio Lëtzebuerg and Made in Luxembourg labels.";
+"IND_DECENT_5450252000078" = "The enterprise offers both internal and external training for people involved in the fabrication of the product, as well as training opportunities for young people.";
+"IND_LABOUR_5450252000078" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_FAIR_5450252000078" = "The BIOG dairy was established to enable the production of regional organic dairy products and ensure fair prices for all actors in the value chain. Establishment and application of the internal ‘fair & associative’ charter aims at an associative economy whereby participants from the entire value chain meet to discuss problems, ensure fair conditions and seek solutions together.";
+"IND_TRANSPARENCY_5450252000078" = "The enterprise uses their webpage, social media, and their magazine, Oikopolis News, to communicate marketing and product information. They can be contacted online, by email and by phone. Specifications are publicly available and cover aspects of production and processing. These are reviewed every 2 years by the quality control department.";
+"IND_PARTICIPATION_5450252000078" = "As part of the internal ‘Fair & Associative’ charter, there is an annual meeting of all actors in the value chain, with the aim of discussion and problem-solving. This includes milk producers, workers from the dairy, wholesalers (Biogros) and retail (Naturata). Additionally, there are opportunities for all stakeholders to acquire shares in the company.";
+"IND_SUSTAINABLEMANAGEMENT_5450252000078" = "As part of the Oikopolis Group, the company follows their participative governance approach, as well as their combined ecological-social-economic approach to sustainable production.";
+
+"PRODUCT_5450322023273_NAME" = "Meyrishaff Wiseneeër - Local conventional eggs";
+"PRODUCT_5450322023273_DESCRIPTION" = "Local conventional free-range eggs produced and sold only within Luxembourg.";
+"IND_ANIMAL_5450322023273" = "Throughout the rearing process, the well-being of the chickens is monitored to ensure healthy, comfortable, safe and well-nourished lives, without fear or suffering. There are indoor and outdoor spaces, a winter garden, and an outdoor run laid out to ensure access to fresh grass, and trees to protect from natural hazards. The hens live in groups of max. 1000 hens, a group size that is below the allowed size of organic regulations (max. 3000 hens)";
+"IND_FOOD_5450322023273" = "The distance between the place where the eggs are produced, and where they are consumed is short. The chickens and chicken feed are all sourced in the Greater Region. The eggs are only sold in Luxembourg.";
+"IND_LOCALECO_5450322023273" = "The eggs are produced by a Luxembourgish farm and sold in Luxembourg exclusively. The chickens and chicken feed are all sourced in the Greater Region. The enterprise has prioritised hiring local employees, even when other candidates have had similar skills, profile and conditions.";
+"IND_LABOUR_5450322023273" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining. In addition, the enterprise ensures that workers have permanent rather than temporary work contracts.";
+"IND_TRANSPARENCY_5450322023273" = "The enterprise uses their webpage and social media for marketing and communicating product information. They can be contacted online, by phone, and on social media.";
+
+"PRODUCT_5453002012055_NAME" = "Autisme Luxembourg a.s.b.l. Confiture Extra Trois Fruits Rouges - Local conventional jam";
+"PRODUCT_5453002012055_DESCRIPTION" = "Local conventional jam made from three red fruits, produced by the association Autism a.s.b.l., with the goal of employing people with autism in local manufacturing. Ingredients: raspberries, red currants, strawberries, sugar, pectin, and lemon.";
+"IND_FOOD_5453002012055" = "Approximately 10% of the red fruits are sourced from Autisme a.s.b.l. local garden and 90% are purchased from a national wholesaler, as well as the other ingredients. Some of the purchased ingredients are of tropical provenance.";
+"IND_LOCALECO_5453002012055" = "The fruits for the jam are sourced locally, with a mininmum of 10% grown in their own fields and the other 90% purchased from a national wholesaler. The entire processing of ingredients into jam takes place in Autisme’s workshops in Beckerich (LU).";
+"IND_DECENT_5453002012055" = "The jam is produced in protected workshops led by Autisme a.s.b.l., providing professional, flexible and supportive employment for people with autism.";
+"IND_EQUITY_5453002012055" = "The jam is produced in protected workshops led by Autisme a.s.b.l., providing employment to the secondary labour market for people with autism.";
+"IND_LABOUR_5453002012055" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining. In addition, the social sector collective agreement on labour rights applies and is respected at all levels. Disabled employees benefit from additional rights according to their specific needs.";
+"IND_TRANSPARENCY_5453002012055" = "Autisme is a non-profit association (a.s.b.l.) and a vocational inclusion workshop undertaking extensive public outreach and awareness raising, including information about the production of jam in their workshops, as well as educational and social activities for support of people with autism.";
+
+"PRODUCT_5453003550020_NAME" = "Moulin Dieschbourg Sidamo Grains - Local organic coffee";
+"PRODUCT_5453003550020_DESCRIPTION" = "Local organic coffee from beans grown in the Sidamo region of Ethiopia. The beans are roasted in Echternach (LU). Product labels: Organic, Fairtrade, Made in Luxembourg.";
+"IND_FLORA_5453003550020" = "EU organic regulations are followed for pest and disease control. Appropriate organic cropping techniques are employed to help pest and disease control. Pesticides are reduced to the minimum allowed by regulations.";
+"IND_SOVEREIGNTY_5453003550020" = "Fairtrade certification guidelines are followed to support producer sovereignty, specifically by working with farmer cooperatives as well as using the Fairtrade guidelines to set up the price policy.";
+"IND_LOCALECO_5453003550020" = "The certified Fairtrade and organic coffee supports the local economy in Sidamo, Ethiopia, the coffee cultivation region. The label “Made in Luxembourg” guarantees a 100% Luxembourg (Echternach) roasted coffee, supporting local craftsmanship and employment. The company is also a member of the association Mëllerdaler Regionalproduzenten.";
+"IND_DECENT_5453003550020" = "Fairtrade certification guidelines better livelihoods for producers, enabling benefits such as family time, rest, culture, and the ability to care for their needs, as well as improve fair access to means of production and land.";
+"IND_LABOUR_5453003550020" = "Luxembourg labour laws are applied in the later stages of production in Echternach, to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining. Fairtrade regulations also assure the coffee producers’ right to negotiate the terms of their employment, to avoid exploitation as well as child labour.";
+"IND_FAIR_5453003550020" = "Fairtrade regulations enable producers to gain fair wages, support their right to freedom of association, and to protect the rights of indigenous communities, their property and knowledge.";
+"IND_TRANSPARENCY_5453003550020" = "The enterprise has a webpage with marketing and product information. They can be contacted online, by email and by phone. The EU organic and international Fairtrade labels have indirect transparency benefits.";
+
+"PRODUCT_5453003631279_NAME" = "Nuddelfabrik Tagliatelle - Local conventional pasta";
+"PRODUCT_5453003631279_DESCRIPTION" = "Local conventional fresh tagliatelle produced in Schifflange (LU). Ingredients: Semolina, eggs. Product labels and certifications: Made in Luxembourg.";
+"IND_FOOD_5453003631279" = "The distance between the place where the product is produced and processed, and where it is consumed is short. The tagliatelle is produced in Schifflange (LU) and sold in Luxembourg.";
+"IND_LOCALECO_5453003631279" = "The tagliatelle is produced in Schifflange (LU) and sold in Luxembourg.";
+"IND_LABOUR_5453003631279" = "Luxembourg labour laws are applied to ensure transparent and legally binding contracts, protect from forced or child labour, and allow freedom of assembly and bargaining.";
+"IND_TRANSPARENCY_5453003631279" = "The enterprise has a webpage with product information and can be contacted online, by phone, and on social media.";
+
+"PRODUCT_9120008998688_NAME" = "Höllinger Bio Wilder Apfel - Imported organic juice";
+"PRODUCT_9120008998688_DESCRIPTION" = "Imported organic cloudy apple juice produced in Austria, made from 100% organic apples. Product labels and certifications: Organic, Vegan.";
+"IND_BIODIV_9120008998688" = "EU organic regulations are followed for biodiversity criteria. The apples grow in classic rural orchards combining different traditional apple varieties, thus leading to preservation and promotion of these species. Beehives are kept in the orchards to encourage pollination.";
+"IND_FLORA_9120008998688" = "EU organic regulations are followed for pest and disease control.";
+"IND_SOIL_9120008998688" = "EU organic regulations are followed for soil fertility criteria. Orchards, as a form of extensively managed habitat, enhance land conservation efforts.";
+"IND_LABOUR_9120008998688" = "Local Austrian regulations are the benchmark to ensure labour rights. The enterprise additionally ensures fair wages (above minimum wage) and improved working hours for local staff.";

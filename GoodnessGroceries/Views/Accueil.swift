@@ -7,6 +7,7 @@ struct Accueil: View {
     @State var search: String = ""
     @State var isSearching: Bool = false
     @EnvironmentObject var UserSettings: UserSettings
+    var resetNavigationID: UUID
     
     var body: some View {
         NavigationView {
@@ -59,7 +60,7 @@ struct Accueil: View {
                 Divider()
                 ScrollView (.vertical, showsIndicators: true) {
                     if(search != "") {
-                        let productsFiltered = productsVM.products.filter { NSLocalizedString($0.name, lang: UserSettings.language).lowercased().contains(search.lowercased()) }
+                        let productsFiltered = productsVM.products.filter { NSLocalizedString($0.name, lang: UserSettings.language).lowercased().contains(search.lowercased()) || NSLocalizedString($0.type, lang: UserSettings.language).lowercased().contains(search.lowercased())}
                         
                         SearchView(products: productsFiltered).padding(.horizontal).animation(.linear)
                     } else {
@@ -71,5 +72,6 @@ struct Accueil: View {
             .navigationBarHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
+        .id(resetNavigationID)
     }
 }

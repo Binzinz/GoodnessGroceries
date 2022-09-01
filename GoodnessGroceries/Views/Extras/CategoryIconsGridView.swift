@@ -18,7 +18,7 @@ struct CategoryIconsGridView: View {
                     ForEach(categoriesVM.categories[0...1], id: \.self) { category in
                         VStack (spacing: 0) {
                             Image(category.icon_name).resizable().scaledToFit().frame(height: cellHeight * scale)
-                            Text(NSLocalizedString(category.name, lang: UserSettings.language)).font(.system(size: 20))
+                            Text(NSLocalizedString(category.name, lang: UserSettings.language)).font(.system(size: 14))
                         }.frame(width: cellWidth, height: cellHeight)
                         .onTapGesture {
                             PopupManager.currentPopup = .category(category: category)
@@ -30,7 +30,7 @@ struct CategoryIconsGridView: View {
                     ForEach(categoriesVM.categories[2...3], id: \.self) { category in
                         VStack (spacing: 0) {
                             Image(category.icon_name).resizable().scaledToFit().frame(height: cellHeight * scale)
-                            Text(NSLocalizedString(category.name, lang: UserSettings.language)).font(.system(size: 20))
+                            Text(NSLocalizedString(category.name, lang: UserSettings.language)).font(.system(size: 14))
                         }.frame(width: cellWidth, height: cellHeight)
                         .onTapGesture {
                             PopupManager.currentPopup = .category(category: category)

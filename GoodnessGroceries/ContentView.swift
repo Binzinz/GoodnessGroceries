@@ -4,10 +4,22 @@ struct ContentView: View {
     
     @EnvironmentObject var UserSettings: UserSettings
     @EnvironmentObject var PopupManager: PopupManager
+    @State private var selection = 0
+    @State var resetNavigationID =  UUID()
+    
     var body: some View {
+        let selectable = Binding(        // << proxy binding to catch tab tap
+                    get: { self.selection },
+                    set: {
+                        //if ($0 == self.selection || $0 == 1) {
+                        //    print("RESET")
+                            resetNavigationID = UUID()
+                        //}
+                        self.selection = $0
+                })
         ZStack {
             if UserSettings.showWelcome {
-                if UserSettings.step < 9 {
+                if UserSettings.step < 7 {
                     if UserSettings.step >= 0 && UserSettings.step <= 5 {
                         VStack {
                             ZStack(alignment: .bottom) {
@@ -27,11 +39,12 @@ struct ContentView: View {
                         }
                     } else if UserSettings.step == 6 {
                          Welcome_page7().transition(.viewTransition)
-                    } else if UserSettings.step == 7 {
+                    }
+                    /*else if UserSettings.step == 7 {
                          Welcome_page8().transition(.viewTransition)
                     } else if UserSettings.step == 8 {
                         Welcome_page9().transition(.viewTransition)
-                   }
+                   }*/
                 } else {
                     if UserSettings.statusRequested {
                         StatusRequestedView()
@@ -40,38 +53,49 @@ struct ContentView: View {
                     }
                 }
             } else {
-                GeometryReader { geometry in
-                    ZStack(alignment: .bottomLeading) {
-                        TabView() {
-                            Accueil().tabItem {
-                                Image(systemName: "house.fill").font(.system(size: 23))
-                                Text(NSLocalizedString("HOME", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(0)
-                            Scanner().tabItem {
-                                Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
-                                Text(NSLocalizedString("SCANNER", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(1)
-                            Profile().tabItem {
-                                Image(systemName: "person.circle.fill").font(.system(size: 23))
-                                Text(NSLocalizedString("PROFILE", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(2)
-                            Help().tabItem {
-                                Image(systemName: "info.circle.fill").font(.system(size: 23))
-                                Text(NSLocalizedString("HELP", lang: UserSettings.language)).font(.system(size: 23))
-                            }.tag(3)
-                        }.accentColor(Color("GG_D_Blue"))
+                if UserSettings.step == 7 {
+                     Welcome_page8().transition(.viewTransition)
+                } else if UserSettings.step == 8 {
+                    Welcome_page9().transition(.viewTransition)
+                }
+                else {
+                    GeometryReader { geometry in
+                        ZStack(alignment: .bottomLeading) {
+                            TabView(selection: selectable) {
+                                Accueil(resetNavigationID: resetNavigationID).tabItem {
+                                    Image(systemName: "house.fill").font(.system(size: 23))
+                                    Text(NSLocalizedString("HOME", lang: UserSettings.language)).font(.system(size: 23))
+                                }.tag(0)
+                                Scanner(resetNavigationID: resetNavigationID).tabItem {
+                                    Image(systemName: "qrcode.viewfinder").font(.system(size: 23))
+                                    Text(NSLocalizedString("SCANNER", lang: UserSettings.language)).font(.system(size: 23))
+                                }.tag(1)
+                                Profile(resetNavigationID: resetNavigationID).tabItem {
+                                    Image(systemName: "person.circle.fill").font(.system(size: 23))
+                                    Text(NSLocalizedString("PROFILE", lang: UserSettings.language)).font(.system(size: 23))
+                                }.tag(2)
+                                
+                                Help(resetNavigationID: resetNavigationID).tabItem {
+                                    Image(systemName: "info.circle.fill").font(.system(size: 23)).onTapGesture(){
+                                        print("hi!")
+                                    }
+                                    Text(NSLocalizedString("HELP", lang: UserSettings.language)).font(.system(size: 23))
+                                }.tag(3)
+                                
+                            }.accentColor(Color("GG_D_Blue"))
 
-                        ZStack {
-                          Circle()
-                            .foregroundColor(.red)
-                          
-                          Text("\(UserSettings.productsToReview.count)")
-                            .foregroundColor(.white)
-                            .font(Font.system(size: 12))
+                            ZStack {
+                              Circle()
+                                .foregroundColor(.red)
+                              
+                              Text("\(UserSettings.productsToReview.count)")
+                                .foregroundColor(.white)
+                                .font(Font.system(size: 12))
+                            }
+                            .frame(width: 20, height: 20)
+                            .offset(x: ( ( 2 * 3) - 1 ) * ( geometry.size.width / ( 2 * 4 ) ), y: -30)
+                            .opacity(UserSettings.productsToReview.count == 0 ? 0 : 1)
                         }
-                        .frame(width: 20, height: 20)
-                        .offset(x: ( ( 2 * 3) - 1 ) * ( geometry.size.width / ( 2 * 4 ) ), y: -30)
-                        .opacity(UserSettings.productsToReview.count == 0 ? 0 : 1)
                     }
                 }
             }
@@ -135,8 +159,8 @@ struct ContentView: View {
                         case .general:
                             GeneralErrorPopup()
                     }
-                case .productImage(let image):
-                    ProductImagePopup(image: image)
+                case .productImage(let image, let name):
+                    ProductImagePopup(image: image, name: name)
                 case .language:
                     LanguagePopup()
                 case .thankyou:
